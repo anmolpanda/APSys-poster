@@ -1,0 +1,433 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Jacobs Landscape Poster
+% LaTeX Template
+% Version 1.0 (29/03/13)
+%
+% Created by:
+% Computational Physics and Biophysics Group, Jacobs University
+% https://teamwork.jacobs-university.de:8443/confluence/display/CoPandBiG/LaTeX+Poster
+% 
+% Further modified by:
+% Nathaniel Johnston (nathaniel@njohnston.ca)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% 
+% Masaryk University presentation themes were downloaded from:
+% https://www.overleaf.com/gallery/tagged/muni
+%
+% and ported into Jacobs Landscape Poster by:
+% Jumaidil Awal (ideal1st.here@googlemail.com)
+% 
+% Jacobs Landscape Poster License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Masaryk University's fibeamer theme license:
+% Copyright 2015  Vít Novotný <witiko@mail.muni.cz>
+% Faculty of Informatics, Masaryk University (Brno, Czech Republic)
+% under Latex Project Public License
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[final]{beamer}
+
+\usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
+
+%\usetheme{confposter} % Use the confposter theme supplied with this template
+\usetheme[faculty=chemo]{fibeamer} % Uncomment to use Masaryk University's fibeamer theme instead.
+
+%\setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
+%\setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
+%\setbeamercolor{block alerted title}{fg=white,bg=dblue!70} % Colors of the highlighted block titles
+%\setbeamercolor{block alerted body}{fg=black,bg=dblue!10} % Colors of the body of highlighted blocks
+% Many more colors are available for use in beamerthemeconfposter.sty
+
+%-----------------------------------------------------------
+% Define the column widths and overall poster size
+% To set effective sepwid, onecolwid and twocolwid values, first choose how many columns you want and how much separation you want between columns
+% In this template, the separation width chosen is 0.024 of the paper width and a 4-column layout
+% onecolwid should therefore be (1-(# of columns+1)*sepwid)/# of columns e.g. (1-(4+1)*0.024)/4 = 0.22
+% Set twocolwid to be (2*onecolwid)+sepwid = 0.464
+% Set threecolwid to be (3*onecolwid)+2*sepwid = 0.708
+
+\newlength{\sepwid}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\newlength{\threecolwid}
+\setlength{\paperwidth}{46.8in} % A0 width: 46.8in
+\setlength{\paperheight}{33.1in} % A0 height: 33.1in
+\setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
+\setlength{\onecolwid}{0.21\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.451\paperwidth} % Width of two columns
+\setlength{\threecolwid}{0.678\paperwidth} % Width of three columns
+%\setlength{\topmargin}{-0.5in} % Reduce the top margin size
+%-----------------------------------------------------------
+
+\usepackage{graphicx}  % Required for including images
+
+\usepackage{booktabs} % Top and bottom rules for tables
+
+\usepackage{multicol} % For multicols
+
+\usepackage{mdframed} % for border arounf figures
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+
+\title{Poster Title} % Poster title
+
+\author{John Smith, James Smith and Jane Smith} % Author(s)
+
+\institute{Department and University Name} % Institution(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
+\addtobeamertemplate{block example end}{}{\vspace*{2ex}} % White space under example blocks
+\addtobeamertemplate{block alerted end}{}{\vspace*{2ex}} % White space under highlighted (alert) blocks
+
+\setlength{\belowcaptionskip}{2ex} % White space under figures
+\setlength\belowdisplayshortskip{2ex} % White space under equations
+%\begin{darkframes} % Uncomment for dark theme, don't forget to \end{darkframes}
+\begin{frame} % The whole poster is enclosed in one beamer frame
+
+%==========================Begin Head===============================
+  \begin{columns}
+   \begin{column}{\linewidth}
+    \vskip1cm
+    \centering
+    \usebeamercolor{title in headline}{\color{fg}\Huge{\textbf{\inserttitle}}\\[0.5ex]}
+    \usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}\\[1ex]}
+    \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
+    \vskip1cm
+   \end{column}
+   \vspace{1cm}
+  \end{columns}
+ \vspace{1cm}
+
+%==========================End Head===============================
+
+\begin{columns}[t] % The whole poster consists of three major columns, the second of which is split into two columns twice - the [t] option aligns each column's content to the top
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The first column
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVES
+%----------------------------------------------------------------------------------------
+
+\begin{exampleblock}{Objectives and Motivation}
+
+\textbf{Goal}: Develop a compiler that can automatically map a high-level specification to an underlying machine architecture in an optimal way.\\
+\textbf{Motivation}:
+\begin{itemize}
+\item Increasing popularity of Software Defined Networks(SDN).
+\item SManual Optimizations are time-consuming and error prone.
+\item DSLs are not very helpful until we develop good compilers.
+\end{itemize}
+
+\end{exampleblock}
+
+%----------------------------------------------------------------------------------------
+%	Compilation
+%----------------------------------------------------------------------------------------
+
+\begin{exampleblock}{Compilation}
+
+
+\begin{figure}
+\fbox{\includegraphics[width=0.8\linewidth]{img/compilation_phases}}
+\caption{Compilation phases}
+\end{figure}
+
+
+\end{exampleblock}
+
+%----------------------------------------------------------------------------------------
+%	Piplining
+%----------------------------------------------------------------------------------------
+
+\begin{exampleblock}{Piplining}
+
+
+\begin{figure}
+\fbox{\includegraphics[width=0.8\linewidth]{img/compilation_phases}}
+\caption{Compilation phases}
+\end{figure}
+
+
+\end{exampleblock}
+
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the first column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
+
+%\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
+
+
+
+%\begin{column}{\twocolwid}
+\begin{exampleblock}{Optimizations}
+\begin{multicols}{3}
+
+\section{Batching}
+\begin{figure}[ht]
+\begin{tiny}
+\begin{tabular}[b]{p{\onecolwid}}
+sub\hspace{\sepwid}{ app} \{ \\
+\hspace{2\sepwid}for (i = 0; i < B; i++) \{ \\
+\hspace{2\sepwid}p = read\_from\_input\_NIC(); \\
+\hspace{2\sepwid}p = process\_packet(p); \\
+\hspace{2\sepwid}write\_to\_output\_NIC(p); \\
+\hspace{\sepwid}\} 
+\end{tabular}
+\end{tiny}
+\end{figure}
+
+\begin{figure}[ht]
+\begin{tiny}
+\begin{tabular}[b]{p{\onecolwid}}
+sub\hspace{0.2cm}{\bf app} \{\\
+\hspace{0.3cm}for (i = 0; i < B; i++)\\
+\hspace{0.6cm}p[i] = read\_from\_input\_NIC();\\
+\hspace{0.3cm}for (i = 0; i < B; i++)\\
+\hspace{0.6cm}p[i] = process\_packet(p[i]);\\
+\hspace{0.3cm}for (i = 0; i < B; i++)\\
+\hspace{0.6cm}write\_to\_output\_NIC(p[i]);\\
+\}\\
+\end{tabular}
+\end{tiny}
+\caption{\label{fig:loop_fission_batch} Batching.}
+\end{figure}
+
+\columnbreak
+
+\begin{figure}[ht]
+\begin{small}
+\begin{tabular}[b]{l|l}
+sub\hspace{0.2cm}{\bf process\_packet}(p) \{ & sub\hspace{0.2cm}{\bf process\_packet}(p) \{\\
+\hspace{0.3cm}for (i = 0; i < B; i++) \{ &\hspace{0.3cm}for (i = 0; i < B; i+=b) \{\\
+\hspace{0.6cm}t1 = lookup\_table1(p[i]); &\hspace{0.6cm}for (j = i; j < i+b; j++)\\
+\hspace{0.6cm}t2 = lookup\_table2(p[i], t1); & \hspace{0.9cm}t1[j-i] = lookup\_table1(p[j]);\\
+\hspace{0.6cm}\ldots &\hspace{0.6cm}for (j = i; j < i+b; j++)\\
+\hspace{0.3cm}\} & \hspace{0.9cm}t1[j-i] = lookup\_table2(p[j], t1[j-i]);\\
+\}&\hspace{0.6cm}\ldots\\
+&\hspace{0.3cm}\}\\
+&\}\\
+\end{tabular}
+\end{small}
+\caption{\label{fig:loop_fission_subbatch} Sub-batching, within {\tt process\_packet}.}
+\end{figure}
+% % \begin{figure}[h!]
+% % \fbox{\includegraphics[width=1\linewidth]{img/optimization_1}}
+% % \caption{Figure caption}
+% % \end{figure}
+% % 
+% % \begin{figure}[h!]
+% % \fbox{\includegraphics[width=1\linewidth]{img/optimization_2}}
+% % \caption{Figure caption}
+% % \end{figure}
+% % 
+% % \begin{figure}[h!]
+% % \fbox{\includegraphics[width=1\linewidth]{img/optimization_3}}
+% % \caption{Figure caption}
+% % \end{figure}
+
+
+\end{multicols}
+
+\end{exampleblock}
+%\end{column}
+
+%\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+
+%----------------------------------------------------------------------------------------
+%	IMPORTANT RESULT
+%----------------------------------------------------------------------------------------
+
+\begin{alertblock}{Important Result}
+
+Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo molestie porta. Sed ultrices scelerisque sapien ac commodo. Donec ut volutpat elit.
+
+\end{alertblock} 
+
+%----------------------------------------------------------------------------------------
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+
+\begin{column}{\twocolwid} % The first column within column 2 (column 2.1)
+
+
+\begin{exampleblock}{ Experiments and Results}
+
+\begin{multicols}{3}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{img/placeholder.jpg}
+\caption{Figure caption}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{img/placeholder.jpg}
+\caption{Figure caption}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{img/placeholder.jpg}
+\caption{Figure caption}
+\end{figure}
+
+
+ 
+\end{multicols}
+\end{exampleblock}
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+% 
+% \begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
+% 
+% %----------------------------------------------------------------------------------------
+% %	RESULTS
+% %----------------------------------------------------------------------------------------
+% 
+% \begin{exampleblock}{Results}
+% 
+% \begin{figure}
+% \includegraphics[width=0.8\linewidth]{img/placeholder.jpg}
+% \caption{Figure caption}
+% \end{figure}
+% 
+% Nunc tempus venenatis facilisis. Curabitur suscipit consequat eros non porttitor. Sed a massa dolor, id ornare enim:
+% 
+% \begin{table}
+% \vspace{2ex}
+% \begin{tabular}{l l l}
+% \toprule
+% \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+% \midrule
+% Treatment 1 & 0.0003262 & 0.562 \\
+% Treatment 2 & 0.0015681 & 0.910 \\
+% Treatment 3 & 0.0009271 & 0.296 \\
+% \bottomrule
+% \end{tabular}
+% \caption{Table caption}
+% \end{table}
+% 
+% \end{exampleblock}
+% 
+% %----------------------------------------------------------------------------------------
+% 
+% \end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2
+
+\end{column} % End of the second column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+% ---------------------------------------------------------------------------------------
+% Column 3
+% ---------------------------------------------------------------------------------------
+
+\begin{column}{\onecolwid} % The third column
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+\begin{exampleblock}{Conclusion}
+
+Nunc tempus venenatis facilisis. \textbf{Curabitur suscipit} consequat eros non porttitor. Sed a massa dolor, id ornare enim. Fusce quis massa dictum tortor \textbf{tincidunt mattis}. Donec quam est, lobortis quis pretium at, laoreet scelerisque lacus. Nam quis odio enim, in molestie libero. Vivamus cursus mi at \textit{nulla elementum sollicitudin}.
+
+\end{exampleblock}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{exampleblock}{Future Work}
+
+Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius dictum. 
+\begin{itemize}
+\item Curabitur pellentesque dignissim
+\item Eu facilisis est tempus quis
+\item Duis porta consequat lorem
+\end{itemize}
+
+\end{exampleblock}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\begin{exampleblock}{References}
+
+\nocite{*} % Insert publications even if they are not cited in the poster
+\small{\bibliographystyle{unsrt}
+\bibliography{sample}\vspace{1cm}}
+\end{exampleblock}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+%\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
+
+%\begin{exampleblock}{Acknowledgements}
+
+%\small{\rmfamily{Nam mollis tristique neque eu luctus. Suspendisse rutrum congue nisi sed convallis. Aenean id neque dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}} \\
+
+%\end{exampleblock}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
+%\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+
+\begin{block}{Contact Information}
+
+\begin{itemize}
+\item Web: \href{http://ideal1st.com/}{http://ideal1st.com/}
+\item Email: \href{mailto:ideal1st.here@gmail.com}{ideal1st.here@gmail.com}
+\end{itemize}
+
+\end{block}
+
+\begin{center}
+\includegraphics[width=0.5\linewidth]{img/iitd_logo.jpg}
+\end{center}
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of the third column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\end{columns} % End of all the columns in the poster
+
+\end{frame} % End of the enclosing frame
+%\end{darkframes} % Uncomment for dark theme
+\end{document}
