@@ -1,13 +1,11 @@
 \begin{thebibliography}{1}
 
-\bibitem{Smith:2012qr}
-J.~M. Smith and A.~B. Jones.
-\newblock {\em {B}ook {T}itle}.
-\newblock Publisher, 7th edition, 2012.
+\bibitem{DPDK}
+{\em Intel Data Plane Development Kit}.
+\newblock \url{http://dpdk.org/}.
 
-\bibitem{Smith:2013jd}
-A.~B. Jones and J.~M. Smith.
-\newblock {A}rticle {T}itle.
-\newblock {\em Journal title}, 13(52):123--456, March 2013.
+\bibitem{Bosshart:2014:PPP:2656877.2656890}
+P4: Programming protocol-independent packet processors.
+\newblock {\em SIGCOMM Comput. Commun. Rev.}, 44(3):87--95, July 2014.
 
 \end{thebibliography}

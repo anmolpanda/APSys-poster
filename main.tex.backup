@@ -79,11 +79,9 @@
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
 
-\title{Poster Title} % Poster title
-
-\author{John Smith, James Smith and Jane Smith} % Author(s)
-
-\institute{Department and University Name} % Institution(s)
+\title{A Preliminary Performance Model for Optimizing Software Packet Processing Pipelines} % Poster title
+\author{Ankit Bhardwaj, Atul Shree, Bhargav Reddy V, and Sorav Bansal} % Author(s)
+\institute{Department of Computer Science and Engineering, Indian Institute of Technology Delhi} % Institution(s)
 
 %----------------------------------------------------------------------------------------
 
@@ -139,7 +137,7 @@
 %	Compilation
 %----------------------------------------------------------------------------------------
 
-\begin{exampleblock}{Compilation}
+\begin{exampleblock}{Compilation Phases}
 
 
 \begin{figure}
@@ -154,15 +152,15 @@
 %	Piplining
 %----------------------------------------------------------------------------------------
 
-\begin{exampleblock}{Piplining}
-
-
+\begin{exampleblock}{Packet Processing Pipeline}
 \begin{figure}
-\fbox{\includegraphics[width=0.8\linewidth]{img/compilation_phases}}
-\caption{Compilation phases}
+\fbox{\includegraphics[width=0.8\linewidth]{img/packet_process_pipeline}}
+\caption{Packet Processing Pipeline}
 \end{figure}
-
-
+\begin{enumerate}[*]
+ \item Exploit DMA bandwidth between NIC and Main Memory labeled \textcircled{1} in Figure
+ \item Exploit Memory Level Parallelism between CPU and Memory labeled \textcircled{2} in Figure
+\end{enumerate}
 \end{exampleblock}
 
 
@@ -184,53 +182,65 @@
 \begin{exampleblock}{Optimizations}
 \begin{multicols}{3}
 
-\section{Batching}
 \begin{figure}[ht]
-\begin{tiny}
+\begin{small}
 \begin{tabular}[b]{p{\onecolwid}}
-sub\hspace{\sepwid}{ app} \{ \\
-\hspace{2\sepwid}for (i = 0; i < B; i++) \{ \\
-\hspace{2\sepwid}p = read\_from\_input\_NIC(); \\
-\hspace{2\sepwid}p = process\_packet(p); \\
-\hspace{2\sepwid}write\_to\_output\_NIC(p); \\
-\hspace{\sepwid}\} 
-\end{tabular}
-\end{tiny}
-\end{figure}
-
-\begin{figure}[ht]
-\begin{tiny}
-\begin{tabular}[b]{p{\onecolwid}}
-sub\hspace{0.2cm}{\bf app} \{\\
-\hspace{0.3cm}for (i = 0; i < B; i++)\\
-\hspace{0.6cm}p[i] = read\_from\_input\_NIC();\\
-\hspace{0.3cm}for (i = 0; i < B; i++)\\
-\hspace{0.6cm}p[i] = process\_packet(p[i]);\\
-\hspace{0.3cm}for (i = 0; i < B; i++)\\
-\hspace{0.6cm}write\_to\_output\_NIC(p[i]);\\
+sub app \{ \\
+\hspace{0.2\sepwid}for (i = 0; i < B; i++) \{ \\
+\hspace{0.4\sepwid}p = read\_from\_input\_NIC(); \\
+\hspace{0.4\sepwid}p = process\_packet(p); \\
+\hspace{0.4\sepwid}write\_to\_output\_NIC(p); \\
+\hspace{0.2\sepwid}\} 
+\\
+sub app \{\\
+\hspace{0.2\sepwid}for (i = 0; i < B; i++)\\
+\hspace{0.4\sepwid}p[i] = read\_from\_input\_NIC();\\
+\hspace{0.2\sepwid}for (i = 0; i < B; i++)\\
+\hspace{0.4\sepwid}p[i] = process\_packet(p[i]);\\
+\hspace{0.2\sepwid}for (i = 0; i < B; i++)\\
+\hspace{0.4\sepwid}write\_to\_output\_NIC(p[i]);\\
 \}\\
 \end{tabular}
-\end{tiny}
-\caption{\label{fig:loop_fission_batch} Batching.}
+\end{small}
 \end{figure}
 
-\columnbreak
+% \begin{figure}[ht]
+% \begin{tiny}
+% \begin{tabular}[b]{p{\onecolwid}}
+% sub\hspace{0.2cm}{\bf app} \{\\
+% \hspace{0.3cm}for (i = 0; i < B; i++)\\
+% \hspace{0.6cm}p[i] = read\_from\_input\_NIC();\\
+% \hspace{0.3cm}for (i = 0; i < B; i++)\\
+% \hspace{0.6cm}p[i] = process\_packet(p[i]);\\
+% \hspace{0.3cm}for (i = 0; i < B; i++)\\
+% \hspace{0.6cm}write\_to\_output\_NIC(p[i]);\\
+% \}\\
+% \end{tabular}
+% \end{tiny}
+% \caption{\label{fig:loop_fission_batch} Batching.}
+% \end{figure}
 
 \begin{figure}[ht]
 \begin{small}
-\begin{tabular}[b]{l|l}
-sub\hspace{0.2cm}{\bf process\_packet}(p) \{ & sub\hspace{0.2cm}{\bf process\_packet}(p) \{\\
-\hspace{0.3cm}for (i = 0; i < B; i++) \{ &\hspace{0.3cm}for (i = 0; i < B; i+=b) \{\\
-\hspace{0.6cm}t1 = lookup\_table1(p[i]); &\hspace{0.6cm}for (j = i; j < i+b; j++)\\
-\hspace{0.6cm}t2 = lookup\_table2(p[i], t1); & \hspace{0.9cm}t1[j-i] = lookup\_table1(p[j]);\\
-\hspace{0.6cm}\ldots &\hspace{0.6cm}for (j = i; j < i+b; j++)\\
-\hspace{0.3cm}\} & \hspace{0.9cm}t1[j-i] = lookup\_table2(p[j], t1[j-i]);\\
-\}&\hspace{0.6cm}\ldots\\
-&\hspace{0.3cm}\}\\
-&\}\\
+\begin{tabular}[b]{p{\onecolwid}}
+sub{ process\_packet}(p) \{ \\
+\hspace{0.2\sepwid}for (i = 0; i < B; i++) \{ \\
+\hspace{0.4\sepwid}t1 = lookup\_table1(p[i]); \\
+\hspace{0.4\sepwid}t2 = lookup\_table2(p[i], t1); \\
+\hspace{0.4\sepwid}\ldots\\
+\hspace{0.2\sepwid}\}\hspace{0.2\sepwid}\}\\
+sub {process\_packet}(p) \{\\
+\hspace{0.2\sepwid}for (i = 0; i < B; i+=b) \{\\
+\hspace{0.4\sepwid}for (j = i; j < i+b; j++)\\
+\hspace{0.6\sepwid}t1[j-i] = lookup\_table1(p[j]);\\
+\hspace{0.4\sepwid}for (j = i; j < i+b; j++)\\
+\hspace{0.6\sepwid}t1[j-i] = lookup\_table2(p[j], t1[j-i]);\\
+\hspace{0.4\sepwid}\ldots\\
+\hspace{0.2\sepwid}\}\hspace{0.2\sepwid}\}\\
+
 \end{tabular}
 \end{small}
-\caption{\label{fig:loop_fission_subbatch} Sub-batching, within {\tt process\_packet}.}
+%\caption{\label{fig:loop_fission_subbatch} Sub-batching, within {\tt process\_packet}.}
 \end{figure}
 % % \begin{figure}[h!]
 % % \fbox{\includegraphics[width=1\linewidth]{img/optimization_1}}
@@ -259,9 +269,7 @@ sub\hspace{0.2cm}{\bf process\_packet}(p) \{ & sub\hspace{0.2cm}{\bf process\_pa
 %	IMPORTANT RESULT
 %----------------------------------------------------------------------------------------
 
-\begin{alertblock}{Important Result}
-
-Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo molestie porta. Sed ultrices scelerisque sapien ac commodo. Donec ut volutpat elit.
+\begin{alertblock}{Performance Model}
 
 \end{alertblock} 
 
@@ -272,22 +280,22 @@ Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo mo
 \begin{column}{\twocolwid} % The first column within column 2 (column 2.1)
 
 
-\begin{exampleblock}{ Experiments and Results}
+\begin{exampleblock}{Experiments and Results}
 
 \begin{multicols}{3}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{img/placeholder.jpg}
+\includegraphics[width=1\linewidth]{img/batching_and_prefetching}
 \caption{Figure caption}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{img/placeholder.jpg}
+\includegraphics[width=1\linewidth]{img/throughput_sensitivity_B}
 \caption{Figure caption}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{img/placeholder.jpg}
+\includegraphics[width=1\linewidth]{img/throughput_sensitivity_b}
 \caption{Figure caption}
 \end{figure}
 
@@ -354,8 +362,9 @@ Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo mo
 %----------------------------------------------------------------------------------------
 
 \begin{exampleblock}{Conclusion}
-
-Nunc tempus venenatis facilisis. \textbf{Curabitur suscipit} consequat eros non porttitor. Sed a massa dolor, id ornare enim. Fusce quis massa dictum tortor \textbf{tincidunt mattis}. Donec quam est, lobortis quis pretium at, laoreet scelerisque lacus. Nam quis odio enim, in molestie libero. Vivamus cursus mi at \textit{nulla elementum sollicitudin}.
+We discuss about batching(B) and sub-batching(b) in this paper. 
+The model to get the optimal value of b and B is preliminary and not fully automatic.
+These optimizations can be used to optimize wide variety of network and streaming applications.
 
 \end{exampleblock}
 
@@ -404,14 +413,12 @@ Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius 
 %\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
 %\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 
-\begin{block}{Contact Information}
-
-\begin{itemize}
-\item Web: \href{http://ideal1st.com/}{http://ideal1st.com/}
-\item Email: \href{mailto:ideal1st.here@gmail.com}{ideal1st.here@gmail.com}
-\end{itemize}
-
-\end{block}
+% \begin{block}{Contact Information}
+% \begin{itemize}
+% \item Web: \href{http://ideal1st.com/}{http://ideal1st.com/}
+% \item Email: \href{mailto:ideal1st.here@gmail.com}{ideal1st.here@gmail.com}
+% \end{itemize}
+% \end{block}
 
 \begin{center}
 \includegraphics[width=0.5\linewidth]{img/iitd_logo.jpg}

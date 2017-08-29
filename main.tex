@@ -79,11 +79,9 @@
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
 
-\title{Poster Title} % Poster title
-
-\author{John Smith, James Smith and Jane Smith} % Author(s)
-
-\institute{Department and University Name} % Institution(s)
+\title{A Preliminary Performance Model for Optimizing Software Packet Processing Pipelines} % Poster title
+\author{Ankit Bhardwaj, Atul Shree, Bhargav Reddy V, and Sorav Bansal} % Author(s)
+\institute{Department of Computer Science and Engineering, Indian Institute of Technology Delhi} % Institution(s)
 
 %----------------------------------------------------------------------------------------
 
@@ -139,7 +137,7 @@
 %	Compilation
 %----------------------------------------------------------------------------------------
 
-\begin{exampleblock}{Compilation}
+\begin{exampleblock}{Compilation Phases}
 
 
 \begin{figure}
@@ -154,15 +152,15 @@
 %	Piplining
 %----------------------------------------------------------------------------------------
 
-\begin{exampleblock}{Piplining}
-
-
+\begin{exampleblock}{Packet Processing Pipeline}
 \begin{figure}
 \fbox{\includegraphics[width=0.8\linewidth]{img/packet_process_pipeline}}
-\caption{Compilation phases}
+\caption{Packet Processing Pipeline}
 \end{figure}
-
-
+\begin{enumerate}[*]
+ \item Exploit DMA bandwidth between NIC and Main Memory labeled \textcircled{1} in Figure
+ \item Exploit Memory Level Parallelism between CPU and Memory labeled \textcircled{2} in Figure
+\end{enumerate}
 \end{exampleblock}
 
 
@@ -271,40 +269,38 @@ sub {process\_packet}(p) \{\\
 %	IMPORTANT RESULT
 %----------------------------------------------------------------------------------------
 
-\begin{alertblock}{Important Result}
-
-Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo molestie porta. Sed ultrices scelerisque sapien ac commodo. Donec ut volutpat elit.
-
+\begin{alertblock}{Performance Model}
+% \begin{multicols}{2}
+IO Subsystem, Memory Subsystem and CPU are working in a pipeline fashion. Let the service rate of CPU, CPU-Memory, I/O-Memory DMA interface be c, m, d.
+$$Throughput = min(c, m, d)$$
+The value of b will vary with change in the parameters related to memory $f_mem(m, b)$. DMA interface is not linearly scalable and rate increases based on some 
+function $f_dma (d,B)$.
+$$Throughput = min(c, f_mem(m, b), f_dma)(d, B))$$
+% \end{multicols}
 \end{alertblock} 
 
 %----------------------------------------------------------------------------------------
 
 \begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
-
 \begin{column}{\twocolwid} % The first column within column 2 (column 2.1)
-
-
-\begin{exampleblock}{ Experiments and Results}
-
+\begin{exampleblock}{Experiments and Results}
 \begin{multicols}{3}
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{img/batching_and_prefetching}
-\caption{Figure caption}
+\caption{Effect of Batching and Prefetching}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{img/throughput_sensitivity_B}
-\caption{Figure caption}
+\caption{Sensitivity of Throughput to B}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{img/throughput_sensitivity_b}
-\caption{Figure caption}
+\caption{Sensitivity of Throughput to b}
 \end{figure}
 
-
- 
 \end{multicols}
 \end{exampleblock}
 
@@ -366,9 +362,8 @@ Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo mo
 %----------------------------------------------------------------------------------------
 
 \begin{exampleblock}{Conclusion}
-
-Nunc tempus venenatis facilisis. \textbf{Curabitur suscipit} consequat eros non porttitor. Sed a massa dolor, id ornare enim. Fusce quis massa dictum tortor \textbf{tincidunt mattis}. Donec quam est, lobortis quis pretium at, laoreet scelerisque lacus. Nam quis odio enim, in molestie libero. Vivamus cursus mi at \textit{nulla elementum sollicitudin}.
-
+We are using Batching(B) to exploit available parallelism between NIC and Memory interface, and prefetching to exploit the memory level parallelism between CPU and Memory interface.
+Sub-Batching(b) is being used to adjust the prefetch distance to take full advantage from software prefetching. The model to get the optimal value of b and B is preliminary and not fully automatic. We are running the applications to get the value of b and B and feeding the compiler to generate the optimal code. These optimizations can be used for wide variety of network and streaming applications.
 \end{exampleblock}
 
 %----------------------------------------------------------------------------------------
@@ -376,14 +371,11 @@ Nunc tempus venenatis facilisis. \textbf{Curabitur suscipit} consequat eros non 
 %----------------------------------------------------------------------------------------
 
 \begin{exampleblock}{Future Work}
-
-Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius dictum. 
 \begin{itemize}
-\item Curabitur pellentesque dignissim
-\item Eu facilisis est tempus quis
-\item Duis porta consequat lorem
+\item Get more understanding of NIC-Memory interface and CPU-Memory interface. 
+\item Make the model robust to be used for various kind of applications.
+\item Use the model for various architecture and do the appropriate changes.
 \end{itemize}
-
 \end{exampleblock}
 
 %----------------------------------------------------------------------------------------
@@ -416,14 +408,12 @@ Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius 
 %\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
 %\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 
-\begin{block}{Contact Information}
-
-\begin{itemize}
-\item Web: \href{http://ideal1st.com/}{http://ideal1st.com/}
-\item Email: \href{mailto:ideal1st.here@gmail.com}{ideal1st.here@gmail.com}
-\end{itemize}
-
-\end{block}
+% \begin{block}{Contact Information}
+% \begin{itemize}
+% \item Web: \href{http://ideal1st.com/}{http://ideal1st.com/}
+% \item Email: \href{mailto:ideal1st.here@gmail.com}{ideal1st.here@gmail.com}
+% \end{itemize}
+% \end{block}
 
 \begin{center}
 \includegraphics[width=0.5\linewidth]{img/iitd_logo.jpg}
