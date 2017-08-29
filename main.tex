@@ -79,6 +79,8 @@
 \usepackage{mathabx} % for up and down arrow
 
 \usepackage{listings} % for C code
+
+\usepackage{threeparttable} % for caption alignment in optimizations
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
@@ -161,21 +163,13 @@ Applications written in P4\cite{p4} are given as the input to P4C compiler and t
 
 
 %------------------------------------------------
-
-%----------------------------------------------------------------------------------------
+%	TRANSFORMATIONS
+%------------------------------------------------
 
 \end{column} % End of the first column
-
 \begin{column}{\sepwid}\end{column} % Empty spacer column
-
 \begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
-
-%\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
-
-
-
-%\begin{column}{\twocolwid}
-\begin{exampleblock}{Loop-Fission for Batching, Sub-Batching, and Prefetching}
+\begin{exampleblock}{Compiler Transformations related to Batching, Sub-Batching and Prefetching}
 \begin{multicols}{3}
 %----------------------------------------------
 %	BATCHING
@@ -189,7 +183,9 @@ sub app \{ \\
 \hspace{0.4\sepwid}p = process\_packet(p); \\
 \hspace{0.4\sepwid}write\_to\_output\_NIC(p); \\
 \hspace{0.2\sepwid}\}\\
+\vspace{1cm}
 \hspace{1\sepwid}$\updownarrows$\\
+\vspace{1cm}
 sub app \{\\
 \hspace{0.2\sepwid}for (i = 0; i < B; i++)\\
 \hspace{0.4\sepwid}p[i] = read\_from\_input\_NIC();\\
@@ -202,6 +198,7 @@ sub app \{\\
 \end{tiny}
 % \caption{Batching}
 \end{figure}
+Loop Fission Transformation for Batching
 %----------------------------------------------
 %	SUB-BATCHING
 %----------------------------------------------
@@ -214,7 +211,9 @@ sub{ process\_packet}(p) \{ \\
 \hspace{0.4\sepwid}t2 = lookup\_table2(p[i], t1); \\
 \hspace{0.4\sepwid}\ldots\\
 \hspace{0.2\sepwid}\}\hspace{0.2\sepwid}\}\\
+\vspace{1cm}
 \hspace{1\sepwid}$\updownarrows$\\
+\vspace{1cm}
 sub {process\_packet}(p) \{\\
 \hspace{0.2\sepwid}for (i = 0; i < B; i+=b) \{\\
 \hspace{0.4\sepwid}for (j = i; j < i+b; j++)\\
@@ -227,6 +226,8 @@ sub {process\_packet}(p) \{\\
 \end{tiny}
 % \caption{Sub-batching}
 \end{figure}
+
+Loop Fission Transformation for Sub-Batching
 %----------------------------------------------
 %	PREFETCHING
 %----------------------------------------------
@@ -256,9 +257,8 @@ sub{ hash\_lookup()} \{\\
 \}\hspace{0.4\sepwid}\}\hspace{0.2\sepwid}\}
 \end{tabular}
 \end{tiny}
-% \caption{Prefetching}
 \end{figure}
-
+Use of Sub-Batching for Prefetching
 \end{multicols}
 \end{exampleblock}
 %----------------------------------------------------------------------------------------
@@ -300,43 +300,6 @@ $$Throughput = min(c, f_{mem}(m, b), f_{dma})(d, B))$$
 
 \end{column} % End of column 2.1
 \begin{column}{\sepwid}\end{column} % Empty spacer column
-
-% 
-% \begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
-% 
-% %----------------------------------------------------------------------------------------
-% %	RESULTS
-% %----------------------------------------------------------------------------------------
-% 
-% \begin{exampleblock}{Results}
-% 
-% \begin{figure}
-% \includegraphics[width=0.8\linewidth]{img/placeholder.jpg}
-% \caption{Figure caption}
-% \end{figure}
-% 
-% Nunc tempus venenatis facilisis. Curabitur suscipit consequat eros non porttitor. Sed a massa dolor, id ornare enim:
-% 
-% \begin{table}
-% \vspace{2ex}
-% \begin{tabular}{l l l}
-% \toprule
-% \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-% \midrule
-% Treatment 1 & 0.0003262 & 0.562 \\
-% Treatment 2 & 0.0015681 & 0.910 \\
-% Treatment 3 & 0.0009271 & 0.296 \\
-% \bottomrule
-% \end{tabular}
-% \caption{Table caption}
-% \end{table}
-% 
-% \end{exampleblock}
-% 
-% %----------------------------------------------------------------------------------------
-% 
-% \end{column} % End of column 2.2
-
 \end{columns} % End of the split of column 2
 
 \end{column} % End of the second column
@@ -353,7 +316,7 @@ $$Throughput = min(c, f_{mem}(m, b), f_{dma})(d, B))$$
 %	CONCLUSION
 %----------------------------------------------------------------------------------------
 
-\begin{exampleblock}{Conclusion}
+\begin{exampleblock}{Discussion}
 We are using Batching(B) to exploit available parallelism between NIC and Memory interface, and prefetching to exploit the memory level parallelism between CPU and Memory interface.
 Sub-Batching(b) is being used to adjust the prefetch distance to take full advantage from software prefetching. The model to get the optimal value of b and B is preliminary and not fully automatic. We are running the applications to get the value of b and B and feeding the compiler to generate the optimal code. These optimizations can be used for wide variety of network and streaming applications.
 \end{exampleblock}
@@ -365,8 +328,8 @@ Sub-Batching(b) is being used to adjust the prefetch distance to take full advan
 \begin{exampleblock}{Future Work}
 \begin{itemize}
 \item Get more understanding of NIC-Memory interface and CPU-Memory interface. 
-\item Make the model robust to be used for various kind of applications.
-\item Use the model for various architecture and do the appropriate changes.
+\item Make the model robust to be used for various kinds of applications.
+\item Extend the model for heterogeneous architectures.
 \end{itemize}
 \end{exampleblock}
 
@@ -381,31 +344,6 @@ Sub-Batching(b) is being used to adjust the prefetch distance to take full advan
 \bibliography{sample}\vspace{1cm}}
 \end{exampleblock}
 
-%----------------------------------------------------------------------------------------
-%	ACKNOWLEDGEMENTS
-%----------------------------------------------------------------------------------------
-
-%\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
-
-%\begin{exampleblock}{Acknowledgements}
-
-%\small{\rmfamily{Nam mollis tristique neque eu luctus. Suspendisse rutrum congue nisi sed convallis. Aenean id neque dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}} \\
-
-%\end{exampleblock}
-
-%----------------------------------------------------------------------------------------
-%	CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
-
-%\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
-%\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
-
-% \begin{block}{Contact Information}
-% \begin{itemize}
-% \item Web: \href{http://ideal1st.com/}{http://ideal1st.com/}
-% \item Email: \href{mailto:ideal1st.here@gmail.com}{ideal1st.here@gmail.com}
-% \end{itemize}
-% \end{block}
 
 \begin{center}
 \includegraphics[width=0.7\linewidth]{img/iitd_logo.jpg}
