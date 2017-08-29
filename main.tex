@@ -75,6 +75,8 @@
 \usepackage{multicol} % For multicols
 
 \usepackage{mdframed} % for border arounf figures
+
+\usepackage{mathabx} % for up and down arrow
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
@@ -121,16 +123,9 @@
 %	OBJECTIVES
 %----------------------------------------------------------------------------------------
 
-\begin{exampleblock}{Objectives and Motivation}
-
-\textbf{Goal}: Develop a compiler that can automatically map a high-level specification to an underlying machine architecture in an optimal way.\\
-\textbf{Motivation}:
-\begin{itemize}
-\item Increasing popularity of Software Defined Networks(SDN).
-\item SManual Optimizations are time-consuming and error prone.
-\item DSLs are not very helpful until we develop good compilers.
-\end{itemize}
-
+\begin{exampleblock}{Motivation and Objectives}
+\textbf{Motivation}: With increasing popularity of SDN, newer protocols are being developed over time. Researcher are developing DSLs to make the task easier. However, ease of programming doesn't guarantee application performance.\\
+\textbf{Goal}: Develop a compiler that can automatically map a high-level specification to an underlying machine architecture in an optimal way.
 \end{exampleblock}
 
 %----------------------------------------------------------------------------------------
@@ -144,8 +139,7 @@
 \fbox{\includegraphics[width=0.8\linewidth]{img/compilation_phases}}
 \caption{Compilation phases}
 \end{figure}
-
-
+Applications written in P4\cite{p4} are given as the input to P4C compiler and the compiler generated DPDK\cite{DPDK} based Applications. DPDK application is compiled using gcc to generate the target binary.
 \end{exampleblock}
 
 %----------------------------------------------------------------------------------------
@@ -179,19 +173,21 @@
 
 
 %\begin{column}{\twocolwid}
-\begin{exampleblock}{Optimizations}
+\begin{exampleblock}{Loop-Fission for Batching, Sub-Batching, and Prefetching}
 \begin{multicols}{3}
-
+%----------------------------------------------
+%	BATCHING
+%----------------------------------------------
 \begin{figure}[ht]
-\begin{small}
+\begin{tiny}
 \begin{tabular}[b]{p{\onecolwid}}
 sub app \{ \\
 \hspace{0.2\sepwid}for (i = 0; i < B; i++) \{ \\
 \hspace{0.4\sepwid}p = read\_from\_input\_NIC(); \\
 \hspace{0.4\sepwid}p = process\_packet(p); \\
 \hspace{0.4\sepwid}write\_to\_output\_NIC(p); \\
-\hspace{0.2\sepwid}\} 
-\\
+\hspace{0.2\sepwid}\}\\
+\hspace{1\sepwid}$\updownarrows$\\
 sub app \{\\
 \hspace{0.2\sepwid}for (i = 0; i < B; i++)\\
 \hspace{0.4\sepwid}p[i] = read\_from\_input\_NIC();\\
@@ -199,29 +195,16 @@ sub app \{\\
 \hspace{0.4\sepwid}p[i] = process\_packet(p[i]);\\
 \hspace{0.2\sepwid}for (i = 0; i < B; i++)\\
 \hspace{0.4\sepwid}write\_to\_output\_NIC(p[i]);\\
-\}\\
+\}
 \end{tabular}
-\end{small}
+\end{tiny}
+% \caption{Batching}
 \end{figure}
-
-% \begin{figure}[ht]
-% \begin{tiny}
-% \begin{tabular}[b]{p{\onecolwid}}
-% sub\hspace{0.2cm}{\bf app} \{\\
-% \hspace{0.3cm}for (i = 0; i < B; i++)\\
-% \hspace{0.6cm}p[i] = read\_from\_input\_NIC();\\
-% \hspace{0.3cm}for (i = 0; i < B; i++)\\
-% \hspace{0.6cm}p[i] = process\_packet(p[i]);\\
-% \hspace{0.3cm}for (i = 0; i < B; i++)\\
-% \hspace{0.6cm}write\_to\_output\_NIC(p[i]);\\
-% \}\\
-% \end{tabular}
-% \end{tiny}
-% \caption{\label{fig:loop_fission_batch} Batching.}
-% \end{figure}
-
+%----------------------------------------------
+%	SUB-BATCHING
+%----------------------------------------------
 \begin{figure}[ht]
-\begin{small}
+\begin{tiny}
 \begin{tabular}[b]{p{\onecolwid}}
 sub{ process\_packet}(p) \{ \\
 \hspace{0.2\sepwid}for (i = 0; i < B; i++) \{ \\
@@ -229,6 +212,7 @@ sub{ process\_packet}(p) \{ \\
 \hspace{0.4\sepwid}t2 = lookup\_table2(p[i], t1); \\
 \hspace{0.4\sepwid}\ldots\\
 \hspace{0.2\sepwid}\}\hspace{0.2\sepwid}\}\\
+\hspace{1\sepwid}$\updownarrows$\\
 sub {process\_packet}(p) \{\\
 \hspace{0.2\sepwid}for (i = 0; i < B; i+=b) \{\\
 \hspace{0.4\sepwid}for (j = i; j < i+b; j++)\\
@@ -236,47 +220,48 @@ sub {process\_packet}(p) \{\\
 \hspace{0.4\sepwid}for (j = i; j < i+b; j++)\\
 \hspace{0.6\sepwid}t1[j-i] = lookup\_table2(p[j], t1[j-i]);\\
 \hspace{0.4\sepwid}\ldots\\
-\hspace{0.2\sepwid}\}\hspace{0.2\sepwid}\}\\
-
+\hspace{0.2\sepwid}\}\hspace{0.2\sepwid}\}
 \end{tabular}
-\end{small}
-%\caption{\label{fig:loop_fission_subbatch} Sub-batching, within {\tt process\_packet}.}
+\end{tiny}
+% \caption{Sub-batching}
 \end{figure}
-% % \begin{figure}[h!]
-% % \fbox{\includegraphics[width=1\linewidth]{img/optimization_1}}
-% % \caption{Figure caption}
-% % \end{figure}
-% % 
-% % \begin{figure}[h!]
-% % \fbox{\includegraphics[width=1\linewidth]{img/optimization_2}}
-% % \caption{Figure caption}
-% % \end{figure}
-% % 
-% % \begin{figure}[h!]
-% % \fbox{\includegraphics[width=1\linewidth]{img/optimization_3}}
-% % \caption{Figure caption}
-% % \end{figure}
-
-
+%----------------------------------------------
+%	PREFETCHING
+%----------------------------------------------
+\begin{figure}[ht]
+\begin{tiny}
+\begin{tabular}[b]{p{\onecolwid}}
+sub\hspace{0.2cm} app \{\\
+\hspace{0.3cm}for (i = 0; i < B; i++)\\
+\hspace{0.6cm}p[i] = read\_from\_input\_NIC();\\
+\hspace{0.3cm}for (i = 0; i < B; i++)\\
+\hspace{0.6cm}p[i] = process\_packet(p[i]);\\
+\hspace{0.3cm}for (i = 0; i < B; i++)\\
+\hspace{0.6cm}write\_to\_output\_NIC(p[i]);\\
+\}\\
+\hspace{1\sepwid}$\updownarrows$\\
+sub\hspace{0.2cm} app \{\\
+\hspace{0.3cm}for (i = 0; i < B; i++)\\
+\hspace{0.6cm}p[i] = read\_from\_input\_NIC();\\
+\hspace{0.3cm}for (i = 0; i < B; i++)\\
+\hspace{0.6cm}p[i] = process\_packet(p[i]);\\
+\hspace{0.3cm}for (i = 0; i < B; i++)\\
+\hspace{0.6cm}write\_to\_output\_NIC(p[i]);\\
+\}\\
+\end{tabular}
+\end{tiny}
+% \caption{Prefetching}
+\end{figure}
 \end{multicols}
-
 \end{exampleblock}
-%\end{column}
-
-%\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
-
 %----------------------------------------------------------------------------------------
 %	IMPORTANT RESULT
 %----------------------------------------------------------------------------------------
 
 \begin{alertblock}{Performance Model}
 % \begin{multicols}{2}
-IO Subsystem, Memory Subsystem and CPU are working in a pipeline fashion. Let the service rate of CPU, CPU-Memory, I/O-Memory DMA interface be c, m, d.
-$$Throughput = min(c, m, d)$$
-The value of b will vary with change in the parameters related to memory $f_mem(m, b)$. DMA interface is not linearly scalable and rate increases based on some 
-function $f_dma (d,B)$.
-$$Throughput = min(c, f_mem(m, b), f_dma)(d, B))$$
-% \end{multicols}
+IO Subsystem, Memory Subsystem and CPU work in a pipeline fashion. Let the service rate of CPU, CPU-Memory, I/O-Memory DMA interface be c, m, d. $Throughput$ of the application will be $min(c, m, d)$. The value of b will vary with change in the parameters related to memory $f_{mem}(m, b)$. DMA interface is not linearly scalable and rate increases based on some function $f_{dma} (d,B)$.
+$$Throughput = min(c, f_{mem}(m, b), f_{dma})(d, B))$$
 \end{alertblock} 
 
 %----------------------------------------------------------------------------------------
@@ -287,18 +272,18 @@ $$Throughput = min(c, f_mem(m, b), f_dma)(d, B))$$
 \begin{multicols}{3}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{img/batching_and_prefetching}
+\fbox{\includegraphics[width=0.99\linewidth]{img/batching_and_prefetching}}
 \caption{Effect of Batching and Prefetching}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{img/throughput_sensitivity_B}
-\caption{Sensitivity of Throughput to B}
+\fbox{\includegraphics[width=0.99\linewidth]{img/throughput_sensitivity_B}}
+\caption{Sensitivity of Throughput to B. Solid line b = B and dotted lines b = 1.}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{img/throughput_sensitivity_b}
-\caption{Sensitivity of Throughput to b}
+\fbox{\includegraphics[width=0.99\linewidth]{img/throughput_sensitivity_b}}
+\caption{Sensitivity of Throughput to b. Batch Size B = 128 for these experiments.}
 \end{figure}
 
 \end{multicols}
@@ -416,7 +401,7 @@ Sub-Batching(b) is being used to adjust the prefetch distance to take full advan
 % \end{block}
 
 \begin{center}
-\includegraphics[width=0.5\linewidth]{img/iitd_logo.jpg}
+\includegraphics[width=0.7\linewidth]{img/iitd_logo.jpg}
 \end{center}
 
 

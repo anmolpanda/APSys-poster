@@ -3,10 +3,10 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
-Warning--empty author in Bosshart:2014:PPP:2656877.2656890
+Warning--empty author in p4
 You've used 2 entries,
             1791 wiz_defined-function locations,
-            458 strings with 3754 characters,
+            457 strings with 3690 characters,
 and the built_in function-call counts, 293 in all, are:
 = -- 26
 > -- 2

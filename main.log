@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.27)  29 AUG 2017 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.27)  29 AUG 2017 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1360,42 +1360,342 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count297
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
+(/usr/share/texlive/texmf-dist/tex/generic/mathabx/mathabx.sty
+Package: mathabx 2003/07/29 v0.0 Non-standard LaTeX package mathabx
+\symmatha=\mathgroup6
+\symmathb=\mathgroup7
+\symmathx=\mathgroup8
+
+(/usr/share/texlive/texmf-dist/tex/generic/mathabx/mathabx.dcl
+LaTeX Font Info:    Redeclaring math symbol \cdotp on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \times on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \div on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \cdot on input line 35.
+LaTeX Font Info:    Redeclaring math symbol \circ on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \ast on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \pm on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \mp on input line 42.
+LaTeX Font Info:    Redeclaring math symbol \ltimes on input line 43.
+LaTeX Font Info:    Redeclaring math symbol \rtimes on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \diamond on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \bullet on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \star on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \amalg on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \dotplus on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \divideontimes on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \bigstar on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \equiv on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \sim on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \approx on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \simeq on input line 86.
+LaTeX Font Info:    Redeclaring math symbol \asymp on input line 89.
+LaTeX Font Info:    Redeclaring math symbol \nsim on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \ncong on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \risingdotseq on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \fallingdotseq on input line 119.
+LaTeX Font Info:    Redeclaring math symbol \circeq on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \eqcirc on input line 126.
+LaTeX Font Info:    Redeclaring math symbol \triangleq on input line 127.
+LaTeX Font Info:    Redeclaring math symbol \neg on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \ll on input line 136.
+LaTeX Font Info:    Redeclaring math symbol \gg on input line 137.
+LaTeX Font Info:    Redeclaring math symbol \vdash on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \dashv on input line 140.
+LaTeX Font Info:    Redeclaring math symbol \nvdash on input line 141.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 143.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 145.
+LaTeX Font Info:    Redeclaring math symbol \Vdash on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \nVdash on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \flat on input line 158.
+LaTeX Font Info:    Redeclaring math symbol \natural on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \sharp on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \infty on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \propto on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \dagger on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \between on input line 170.
+LaTeX Font Info:    Redeclaring math symbol \smile on input line 171.
+LaTeX Font Info:    Redeclaring math symbol \frown on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \leftthreetimes on input line 174.
+LaTeX Font Info:    Redeclaring math symbol \rightthreetimes on input line 175.
+
+LaTeX Font Info:    Redeclaring math symbol \pitchfork on input line 176.
+LaTeX Font Info:    Redeclaring math symbol \nVDash on input line 182.
+LaTeX Font Info:    Redeclaring math symbol \Vvdash on input line 184.
+LaTeX Font Info:    Redeclaring math symbol \therefore on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \because on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \measuredangle on input line 202.
+LaTeX Font Info:    Redeclaring math symbol \sphericalangle on input line 203.
+LaTeX Font Info:    Redeclaring math symbol \setminus on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \mid on input line 222.
+LaTeX Font Info:    Redeclaring math symbol \forall on input line 279.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 280.
+LaTeX Font Info:    Redeclaring math symbol \partial on input line 281.
+LaTeX Font Info:    Redeclaring math symbol \exists on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 285.
+LaTeX Font Info:    Redeclaring math symbol \Finv on input line 286.
+LaTeX Font Info:    Redeclaring math symbol \Game on input line 287.
+LaTeX Font Info:    Redeclaring math symbol \emptyset on input line 288.
+LaTeX Font Info:    Redeclaring math symbol \top on input line 290.
+LaTeX Font Info:    Redeclaring math symbol \bot on input line 291.
+LaTeX Font Info:    Redeclaring math symbol \perp on input line 292.
+LaTeX Font Info:    Redeclaring math symbol \curlywedge on input line 296.
+LaTeX Font Info:    Redeclaring math symbol \curlyvee on input line 297.
+LaTeX Font Info:    Redeclaring math symbol \in on input line 299.
+LaTeX Font Info:    Redeclaring math symbol \owns on input line 300.
+LaTeX Font Info:    Redeclaring math symbol \cap on input line 312.
+LaTeX Font Info:    Redeclaring math symbol \cup on input line 313.
+LaTeX Font Info:    Redeclaring math symbol \uplus on input line 314.
+LaTeX Font Info:    Redeclaring math symbol \sqcap on input line 315.
+LaTeX Font Info:    Redeclaring math symbol \sqcup on input line 316.
+LaTeX Font Info:    Redeclaring math symbol \wedge on input line 318.
+LaTeX Font Info:    Redeclaring math symbol \vee on input line 320.
+LaTeX Font Info:    Redeclaring math symbol \barwedge on input line 327.
+LaTeX Font Info:    Redeclaring math symbol \veebar on input line 328.
+LaTeX Font Info:    Redeclaring math symbol \doublebarwedge on input line 329.
+LaTeX Font Info:    Redeclaring math symbol \doublecap on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \doublecup on input line 333.
+LaTeX Font Info:    Redeclaring math symbol \subset on input line 344.
+LaTeX Font Info:    Redeclaring math symbol \supset on input line 345.
+LaTeX Font Info:    Redeclaring math symbol \subseteq on input line 348.
+LaTeX Font Info:    Redeclaring math symbol \supseteq on input line 349.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteq on input line 350.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteq on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \subsetneq on input line 352.
+LaTeX Font Info:    Redeclaring math symbol \supsetneq on input line 353.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 354.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneq on input line 355.
+LaTeX Font Info:    Redeclaring math symbol \subseteqq on input line 357.
+LaTeX Font Info:    Redeclaring math symbol \supseteqq on input line 358.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteqq on input line 359.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteqq on input line 360.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 361.
+LaTeX Font Info:    Redeclaring math symbol \supsetneqq on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneqq on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneqq on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Subset on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Supset on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \sqsubseteq on input line 380.
+LaTeX Font Info:    Redeclaring math symbol \sqsupseteq on input line 381.
+LaTeX Font Info:    Redeclaring math symbol \triangleleft on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \vartriangleleft on input line 408.
+
+LaTeX Font Info:    Redeclaring math symbol \triangleright on input line 409.
+LaTeX Font Info:    Redeclaring math symbol \vartriangleright on input line 410
+.
+LaTeX Font Info:    Redeclaring math symbol \ntriangleleft on input line 411.
+LaTeX Font Info:    Redeclaring math symbol \ntriangleright on input line 412.
+LaTeX Font Info:    Redeclaring math symbol \trianglelefteq on input line 413.
+LaTeX Font Info:    Redeclaring math symbol \trianglerighteq on input line 414.
+
+LaTeX Font Info:    Redeclaring math symbol \ntrianglelefteq on input line 415.
+
+LaTeX Font Info:    Redeclaring math symbol \ntrianglerighteq on input line 416
+.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangledown on input line 42
+7.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 42
+8.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 4
+29.
+LaTeX Font Info:    Redeclaring math symbol \nless on input line 437.
+LaTeX Font Info:    Redeclaring math symbol \ngtr on input line 438.
+LaTeX Font Info:    Redeclaring math symbol \leq on input line 439.
+LaTeX Font Info:    Redeclaring math symbol \geq on input line 441.
+LaTeX Font Info:    Redeclaring math symbol \nleq on input line 443.
+LaTeX Font Info:    Redeclaring math symbol \ngeq on input line 445.
+LaTeX Font Info:    Redeclaring math symbol \lneq on input line 451.
+LaTeX Font Info:    Redeclaring math symbol \gneq on input line 452.
+LaTeX Font Info:    Redeclaring math symbol \leqq on input line 453.
+LaTeX Font Info:    Redeclaring math symbol \geqq on input line 454.
+LaTeX Font Info:    Redeclaring math symbol \nleqq on input line 455.
+LaTeX Font Info:    Redeclaring math symbol \ngeqq on input line 456.
+LaTeX Font Info:    Redeclaring math symbol \lneqq on input line 457.
+LaTeX Font Info:    Redeclaring math symbol \gneqq on input line 458.
+LaTeX Font Info:    Redeclaring math symbol \lvertneqq on input line 459.
+LaTeX Font Info:    Redeclaring math symbol \gvertneqq on input line 460.
+LaTeX Font Info:    Redeclaring math symbol \eqslantless on input line 461.
+LaTeX Font Info:    Redeclaring math symbol \eqslantgtr on input line 462.
+LaTeX Font Info:    Redeclaring math symbol \lessgtr on input line 465.
+LaTeX Font Info:    Redeclaring math symbol \gtrless on input line 466.
+LaTeX Font Info:    Redeclaring math symbol \lesseqgtr on input line 467.
+LaTeX Font Info:    Redeclaring math symbol \gtreqless on input line 468.
+LaTeX Font Info:    Redeclaring math symbol \lesseqqgtr on input line 469.
+LaTeX Font Info:    Redeclaring math symbol \gtreqqless on input line 470.
+LaTeX Font Info:    Redeclaring math symbol \lesssim on input line 472.
+LaTeX Font Info:    Redeclaring math symbol \gtrsim on input line 473.
+LaTeX Font Info:    Redeclaring math symbol \lnsim on input line 476.
+LaTeX Font Info:    Redeclaring math symbol \gnsim on input line 477.
+LaTeX Font Info:    Redeclaring math symbol \lessapprox on input line 478.
+LaTeX Font Info:    Redeclaring math symbol \gtrapprox on input line 479.
+LaTeX Font Info:    Redeclaring math symbol \lnapprox on input line 482.
+LaTeX Font Info:    Redeclaring math symbol \gnapprox on input line 483.
+LaTeX Font Info:    Redeclaring math symbol \lessdot on input line 485.
+LaTeX Font Info:    Redeclaring math symbol \gtrdot on input line 486.
+LaTeX Font Info:    Redeclaring math symbol \lll on input line 488.
+LaTeX Font Info:    Redeclaring math symbol \ggg on input line 489.
+LaTeX Font Info:    Redeclaring math symbol \prec on input line 498.
+LaTeX Font Info:    Redeclaring math symbol \succ on input line 499.
+LaTeX Font Info:    Redeclaring math symbol \nprec on input line 500.
+LaTeX Font Info:    Redeclaring math symbol \nsucc on input line 501.
+LaTeX Font Info:    Redeclaring math symbol \preccurlyeq on input line 502.
+LaTeX Font Info:    Redeclaring math symbol \succcurlyeq on input line 503.
+LaTeX Font Info:    Redeclaring math symbol \preceq on input line 506.
+LaTeX Font Info:    Redeclaring math symbol \succeq on input line 507.
+LaTeX Font Info:    Redeclaring math symbol \npreceq on input line 508.
+LaTeX Font Info:    Redeclaring math symbol \nsucceq on input line 509.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqprec on input line 512.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqsucc on input line 513.
+LaTeX Font Info:    Redeclaring math symbol \precsim on input line 517.
+LaTeX Font Info:    Redeclaring math symbol \succsim on input line 518.
+LaTeX Font Info:    Redeclaring math symbol \precnsim on input line 521.
+LaTeX Font Info:    Redeclaring math symbol \succnsim on input line 522.
+LaTeX Font Info:    Redeclaring math symbol \precapprox on input line 523.
+LaTeX Font Info:    Redeclaring math symbol \succapprox on input line 524.
+LaTeX Font Info:    Redeclaring math symbol \precnapprox on input line 527.
+LaTeX Font Info:    Redeclaring math symbol \succnapprox on input line 528.
+LaTeX Font Info:    Redeclaring math symbol \leftarrow on input line 540.
+LaTeX Font Info:    Redeclaring math symbol \rightarrow on input line 542.
+LaTeX Font Info:    Redeclaring math symbol \nwarrow on input line 546.
+LaTeX Font Info:    Redeclaring math symbol \nearrow on input line 547.
+LaTeX Font Info:    Redeclaring math symbol \swarrow on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \searrow on input line 549.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrow on input line 550.
+LaTeX Font Info:    Redeclaring math symbol \nleftarrow on input line 552.
+LaTeX Font Info:    Redeclaring math symbol \nrightarrow on input line 553.
+LaTeX Font Info:    Redeclaring math symbol \nleftrightarrow on input line 554.
+
+LaTeX Font Info:    Redeclaring math symbol \mapstochar on input line 557.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoonup on input line 560.
+LaTeX Font Info:    Redeclaring math symbol \rightharpoonup on input line 561.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoondown on input line 562.
+
+LaTeX Font Info:    Redeclaring math symbol \rightharpoondown on input line 563
+.
+LaTeX Font Info:    Redeclaring math symbol \upharpoonleft on input line 564.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonleft on input line 565.
+
+LaTeX Font Info:    Redeclaring math symbol \upharpoonright on input line 566.
+LaTeX Font Info:    Redeclaring math symbol \restriction on input line 567.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonright on input line 568
+.
+LaTeX Font Info:    Redeclaring math symbol \leftrightharpoons on input line 56
+9.
+LaTeX Font Info:    Redeclaring math symbol \Leftarrow on input line 575.
+LaTeX Font Info:    Redeclaring math symbol \Rightarrow on input line 576.
+LaTeX Font Info:    Redeclaring math symbol \Leftrightarrow on input line 579.
+LaTeX Font Info:    Redeclaring math symbol \nLeftarrow on input line 581.
+LaTeX Font Info:    Redeclaring math symbol \nRightarrow on input line 582.
+LaTeX Font Info:    Redeclaring math symbol \nLeftrightarrow on input line 583.
+
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 593.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 594
+.
+LaTeX Font Info:    Redeclaring math symbol \upuparrows on input line 595.
+LaTeX Font Info:    Redeclaring math symbol \downdownarrows on input line 596.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrows on input line 597.
+
+LaTeX Font Info:    Redeclaring math symbol \rightleftarrows on input line 598.
+
+LaTeX Font Info:    Redeclaring math symbol \rhook on input line 612.
+LaTeX Font Info:    Redeclaring math symbol \lhook on input line 613.
+LaTeX Font Info:    Redeclaring math symbol \diagup on input line 614.
+LaTeX Font Info:    Redeclaring math symbol \diagdown on input line 615.
+LaTeX Font Info:    Redeclaring math symbol \Lsh on input line 617.
+LaTeX Font Info:    Redeclaring math symbol \Rsh on input line 619.
+LaTeX Font Info:    Redeclaring math symbol \looparrowleft on input line 624.
+LaTeX Font Info:    Redeclaring math symbol \looparrowright on input line 626.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 631.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 633.
+
+LaTeX Font Info:    Redeclaring math symbol \circlearrowleft on input line 641.
+
+LaTeX Font Info:    Redeclaring math symbol \circlearrowright on input line 642
+.
+LaTeX Font Info:    Redeclaring math symbol \rightsquigarrow on input line 645.
+
+LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 
+646.
+LaTeX Font Info:    Redeclaring math symbol \oplus on input line 658.
+LaTeX Font Info:    Redeclaring math symbol \ominus on input line 659.
+LaTeX Font Info:    Redeclaring math symbol \otimes on input line 661.
+LaTeX Font Info:    Redeclaring math symbol \odot on input line 663.
+LaTeX Font Info:    Redeclaring math symbol \oslash on input line 675.
+LaTeX Font Info:    Redeclaring math symbol \boxplus on input line 683.
+LaTeX Font Info:    Redeclaring math symbol \boxminus on input line 684.
+LaTeX Font Info:    Redeclaring math symbol \boxtimes on input line 686.
+LaTeX Font Info:    Redeclaring math symbol \boxdot on input line 688.
+\mayacnter=\count298
+\mayacnta=\count299
+\mayacntb=\count300
+\mayacntc=\count301
+\mayawidth=\dimen313
+LaTeX Font Info:    Redeclaring math symbol \intop on input line 753.
+LaTeX Font Info:    Redeclaring math symbol \ointop on input line 760.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 842.
+LaTeX Info: Redefining \{ on input line 846.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 848.
+LaTeX Info: Redefining \} on input line 852.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 858.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 859.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 863.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 865.
+LaTeX Font Info:    Redeclaring math delimiter \uparrow on input line 868.
+LaTeX Font Info:    Redeclaring math delimiter \downarrow on input line 869.
+LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 870.
+LaTeX Font Info:    Redeclaring math delimiter \Uparrow on input line 871.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 872.
+LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 873.
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 880.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 881.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 882.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 883.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 884.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 885.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 903.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 905.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 907.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 909.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 944.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 946.
+))
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-pdfdoc.def
 File: se-pdfdoc.def 2016/05/16 v1.11 stringenc: PDFDocEncoding
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 90.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    ... okay on input line 90.
 LaTeX Font Info:    Try loading font information for T1+Carlito-LF on input lin
-e 88.
+e 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/carlito/T1Carlito-LF.fd
 File: T1Carlito-LF.fd 2014/08/20 (autoinst) Font definitions for T1/Carlito-LF.
 
 )
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 37.03pt on input line 88.
+(Font)              scaled to size 37.03pt on input line 90.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1433,16 +1733,16 @@ LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen313
+\scratchcounter=\count302
+\scratchdimen=\dimen314
 \scratchbox=\box107
-\nofMPsegments=\count299
-\nofMParguments=\count300
+\nofMPsegments=\count303
+\nofMParguments=\count304
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen314
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
+\MPscratchCnt=\count305
+\MPscratchDim=\dimen315
+\MPnumerator=\count306
+\makeMPintoPDFobject=\count307
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1463,7 +1763,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box108
-Package hyperref Info: Link coloring ON on input line 88.
+Package hyperref Info: Link coloring ON on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1471,71 +1771,71 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count304
+\c@section@level=\count308
 )
-LaTeX Info: Redefining \ref on input line 88.
-LaTeX Info: Redefining \pageref on input line 88.
-LaTeX Info: Redefining \nameref on input line 88.
+LaTeX Info: Redefining \ref on input line 90.
+LaTeX Info: Redefining \pageref on input line 90.
+LaTeX Info: Redefining \nameref on input line 90.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 88.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 90.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 88.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 90.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/Carlito-LF/m/n on input line 88.
+(Font)                  OT1/cmss/m/n --> OT1/Carlito-LF/m/n on input line 90.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/Carlito-LF/bx/n on input line 88.
+(Font)                  OT1/cmss/bx/n --> OT1/Carlito-LF/bx/n on input line 90.
 
-\symnumbers=\mathgroup6
-\sympureletters=\mathgroup7
+\symnumbers=\mathgroup9
+\sympureletters=\mathgroup10
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/Carlito-LF/m/n --> T1/lmr/m/n on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 88.
+(Font)                  OT1/Carlito-LF/m/n --> T1/lmr/m/n on input line 90.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/Carlito-LF/bx/n on input line 88.
+(Font)                  OT1/lmr/bx/n --> T1/Carlito-LF/bx/n on input line 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/Carlito-LF/bx/n on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 88.
+(Font)                  OT1/lmr/bx/n --> T1/Carlito-LF/bx/n on input line 90.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/Carlito-LF/m/n on input line 88.
+(Font)                  OT1/lmss/m/n --> T1/Carlito-LF/m/n on input line 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/Carlito-LF/m/n on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 88.
+(Font)                  OT1/lmss/bx/n --> T1/Carlito-LF/m/n on input line 90.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/Carlito-LF/m/it on input line 88.
+(Font)                  OT1/lmr/m/it --> T1/Carlito-LF/m/it on input line 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/Carlito-LF/m/it on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 88.
+(Font)                  OT1/lmr/bx/it --> T1/Carlito-LF/m/it on input line 90.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/lmtt/m/n --> T1/DejaVuSansMono-TLF/m/n on input lin
-e 88.
+e 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/lmtt/m/n --> T1/DejaVuSansMono-TLF/m/n on input lin
-e 88.
+e 90.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  T1/Carlito-LF/m/n --> T1/Carlito-LF/bx/n on input line 
-88.
+90.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/Carlito-LF/m/it --> T1/Carlito-LF/bx/it on input lin
-e 88.
+e 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/Carlito-LF/bx/n --> T1/lmr/bx/n on input line 88.
+(Font)                  OT1/Carlito-LF/bx/n --> T1/lmr/bx/n on input line 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  T1/Carlito-LF/bx/n --> T1/Carlito-LF/bx/n on input line
- 88.
+ 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  T1/Carlito-LF/m/n --> T1/Carlito-LF/bx/n on input line 
-88.
+90.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  T1/Carlito-LF/m/it --> T1/Carlito-LF/bx/it on input lin
-e 88.
+e 90.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  T1/DejaVuSansMono-TLF/m/n --> T1/DejaVuSansMono-TLF/bx/
-n on input line 88.
+n on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1561,8 +1861,8 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 88.
-LaTeX Info: Redefining \microtypecontext on input line 88.
+LaTeX Info: Redefining \includegraphics on input line 90.
+LaTeX Info: Redefining \microtypecontext on input line 90.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1576,34 +1876,34 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `Carlito-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@mv@tabular=\count305
-\c@mv@boldtabular=\count306
+\c@mv@tabular=\count309
+\c@mv@boldtabular=\count310
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/Carlito-LF/m/n --> OT1/zavm/m/n on input line 88.
+(Font)                  OT1/Carlito-LF/m/n --> OT1/zavm/m/n on input line 90.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/lmm/m/it --> OML/zavm/m/it on input line 88.
+(Font)                  OML/lmm/m/it --> OML/zavm/m/it on input line 90.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> OMS/zavm/m/n on input line 88.
+(Font)                  OMS/lmsy/m/n --> OMS/zavm/m/n on input line 90.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> OMX/iwona/m/n on input line 88.
-\c@lstlisting=\count307
+(Font)                  OMX/lmex/m/n --> OMX/iwona/m/n on input line 90.
+\c@lstlisting=\count311
  (./main.nav)
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 17.86pt on input line 88.
+(Font)              scaled to size 17.86pt on input line 90.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 92.13pt on input line 433.
+(Font)              scaled to size 92.13pt on input line 418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <92.13> not availab
 le
 (Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
-433.
+418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
-(Font)              scaled to size 92.13pt on input line 433.
+(Font)              scaled to size 92.13pt on input line 418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 53.32pt on input line 433.
+(Font)              scaled to size 53.32pt on input line 418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 44.43pt on input line 433.
-LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 433.
-LaTeX Font Info:    Try loading font information for OT1+zavm on input line 433
+(Font)              scaled to size 44.43pt on input line 418.
+LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 418.
+LaTeX Font Info:    Try loading font information for OT1+zavm on input line 418
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/arev/ot1zavm.fd
@@ -1632,19 +1932,19 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `OT1/zavm/m/n/18.515'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 31.47572pt on input line 433.
+(Font)              scaled to size 31.47572pt on input line 418.
 <<oml.cmap>>
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 22.0329pt on input line 433.
+(Font)              scaled to size 22.0329pt on input line 418.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 15.73785pt on input line 433.
-LaTeX Font Info:    Try loading font information for OMS+zavm on input line 433
+(Font)              scaled to size 15.73785pt on input line 418.
+LaTeX Font Info:    Try loading font information for OMS+zavm on input line 418
 .
  (/usr/share/texlive/texmf-dist/tex/latex/arev/omszavm.fd
 File: omszavm.fd 2006/05/30 Fontinst v1.929 font definitions for OMS/zavm.
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+iwona on input line 43
-3.
+LaTeX Font Info:    Try loading font information for OMX+iwona on input line 41
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/iwona/omxiwona.fd
 File: omxiwona.fd 2008/07/22 v0.995 font definition file for OMX/iwona (MW)
@@ -1655,150 +1955,294 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+
+LaTeX Font Warning: Font shape `U/matha/m/n' in size <37.03> not available
+(Font)              size <24.88> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/matha/m/n' in size <25.92088> not available
+(Font)              size <24.88> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/matha/m/n' in size <18.515> not available
+(Font)              size <17.28> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathb/m/n' in size <37.03> not available
+(Font)              size <24.88> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathb/m/n' in size <25.92088> not available
+(Font)              size <24.88> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathb/m/n' in size <18.515> not available
+(Font)              size <17.28> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathx/m/n' in size <37.03> not available
+(Font)              size <24.88> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathx/m/n' in size <25.92088> not available
+(Font)              size <24.88> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathx/m/n' in size <18.515> not available
+(Font)              size <17.28> substituted on input line 418.
+
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 25.92088pt on input line 433.
+(Font)              scaled to size 25.92088pt on input line 418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 18.515pt on input line 433.
+(Font)              scaled to size 18.515pt on input line 418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 37.03pt on input line 433.
+(Font)              scaled to size 37.03pt on input line 418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 25.92088pt on input line 433.
+(Font)              scaled to size 25.92088pt on input line 418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 18.515pt on input line 433.
+(Font)              scaled to size 18.515pt on input line 418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <37.03> not availab
 le
 (Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
-433.
+418.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
-(Font)              scaled to size 37.03pt on input line 433.
-
+(Font)              scaled to size 37.03pt on input line 418.
 <img/compilation_phases.png, id=18, 1198.4775pt x 511.9125pt>
 File: img/compilation_phases.png Graphic file (type png)
 
 <use img/compilation_phases.png>
-Package pdftex.def Info: img/compilation_phases.png used on input line 433.
+Package pdftex.def Info: img/compilation_phases.png used on input line 418.
 (pdftex.def)             Requested size: 568.236pt x 242.71573pt.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 30.85pt on input line 433.
+(Font)              scaled to size 30.85pt on input line 418.
 
-<img/packet_process_pipeline.png, id=19, 997.7275pt x 369.38pt>
+<img/packet_process_pipeline.png, id=21, 997.7275pt x 369.38pt>
 File: img/packet_process_pipeline.png Graphic file (type png)
 
 <use img/packet_process_pipeline.png>
-Package pdftex.def Info: img/packet_process_pipeline.png used on input line 433
+Package pdftex.def Info: img/packet_process_pipeline.png used on input line 418
 .
 (pdftex.def)             Requested size: 568.236pt x 210.37968pt.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 433.
+             The label is: * on input line 418.
 
 LaTeX Font Info:    Try loading font information for OMS+Carlito-LF on input li
-ne 433.
-LaTeX Font Info:    No file OMSCarlito-LF.fd. on input line 433.
+ne 418.
+LaTeX Font Info:    No file OMSCarlito-LF.fd. on input line 418.
 
 LaTeX Font Warning: Font shape `OMS/Carlito-LF/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 433.
+(Font)              using `OMS/cmsy/m/n' instead on input line 418.
 
-LaTeX Font Info:    Calculating math sizes for size <30.85> on input line 433.
+LaTeX Font Info:    Calculating math sizes for size <17.86> on input line 418.
 Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `OT1/zavm/m/n/30.85'.
+(microtype)             in font `OT1/zavm/m/n/17.86'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `OT1/zavm/m/n/30.85'.
+(microtype)             in font `OT1/zavm/m/n/17.86'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `OT1/zavm/m/n/21.59491'.
+(microtype)             in font `OT1/zavm/m/n/12.50194'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `OT1/zavm/m/n/21.59491'.
+(microtype)             in font `OT1/zavm/m/n/12.50194'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `OT1/zavm/m/n/15.425'.
+(microtype)             in font `OT1/zavm/m/n/8.93'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `OT1/zavm/m/n/15.425'.
+(microtype)             in font `OT1/zavm/m/n/8.93'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 26.22269pt on input line 433.
+(Font)              scaled to size 15.1811pt on input line 418.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 18.3558pt on input line 433.
+(Font)              scaled to size 10.62671pt on input line 418.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 13.11134pt on input line 433.
-LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 21.59491pt on input line 433.
-LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 15.425pt on input line 433.
-LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 30.85pt on input line 433.
-LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 21.59491pt on input line 433.
-LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 15.425pt on input line 433.
+(Font)              scaled to size 7.59055pt on input line 418.
 
-Overfull \hbox (220.4916pt too wide) in paragraph at lines 433--433
+LaTeX Font Warning: Font shape `U/matha/m/n' in size <17.86> not available
+(Font)              size <17.28> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/matha/m/n' in size <12.50194> not available
+(Font)              size <12> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathb/m/n' in size <17.86> not available
+(Font)              size <17.28> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathb/m/n' in size <12.50194> not available
+(Font)              size <12> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathx/m/n' in size <17.86> not available
+(Font)              size <17.28> substituted on input line 418.
+
+
+LaTeX Font Warning: Font shape `U/mathx/m/n' in size <12.50194> not available
+(Font)              size <12> substituted on input line 418.
+
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 12.50194pt on input line 418.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 8.93pt on input line 418.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
+(Font)              scaled to size 17.86pt on input line 418.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
+(Font)              scaled to size 12.50194pt on input line 418.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
+(Font)              scaled to size 8.93pt on input line 418.
+
+Overfull \hbox (220.4916pt too wide) in paragraph at lines 418--418
  [] 
  []
 
 
-Overfull \hbox (220.4916pt too wide) in paragraph at lines 433--433
+Overfull \hbox (220.4916pt too wide) in paragraph at lines 418--418
  [] 
  []
 
-<img/batching_and_prefetching.png, id=20, 596.2275pt x 494.84875pt>
+
+Overfull \hbox (220.4916pt too wide) in paragraph at lines 418--418
+ [] 
+ []
+
+<img/batching_and_prefetching.png, id=22, 596.2275pt x 494.84875pt>
 File: img/batching_and_prefetching.png Graphic file (type png)
 
 <use img/batching_and_prefetching.png>
-Package pdftex.def Info: img/batching_and_prefetching.png used on input line 43
-3.
-(pdftex.def)             Requested size: 501.8007pt x 416.47806pt.
+Package pdftex.def Info: img/batching_and_prefetching.png used on input line 41
+8.
+(pdftex.def)             Requested size: 496.78545pt x 412.31758pt.
 
-<img/throughput_sensitivity_B.png, id=21, 596.2275pt x 495.8525pt>
+Overfull \hbox (1.78473pt too wide) in paragraph at lines 418--418
+ [] 
+ []
+
+<img/throughput_sensitivity_B.png, id=23, 596.2275pt x 495.8525pt>
 File: img/throughput_sensitivity_B.png Graphic file (type png)
 
 <use img/throughput_sensitivity_B.png>
-Package pdftex.def Info: img/throughput_sensitivity_B.png used on input line 43
-3.
-(pdftex.def)             Requested size: 501.8007pt x 417.32283pt.
+Package pdftex.def Info: img/throughput_sensitivity_B.png used on input line 41
+8.
+(pdftex.def)             Requested size: 496.78545pt x 413.15392pt.
 
-<img/throughput_sensitivity_b.png, id=22, 599.23875pt x 495.8525pt>
+Overfull \hbox (1.78473pt too wide) in paragraph at lines 418--418
+ [] 
+ []
+
+<img/throughput_sensitivity_b.png, id=24, 599.23875pt x 495.8525pt>
 File: img/throughput_sensitivity_b.png Graphic file (type png)
 
 <use img/throughput_sensitivity_b.png>
-Package pdftex.def Info: img/throughput_sensitivity_b.png used on input line 43
-3.
-(pdftex.def)             Requested size: 501.8007pt x 415.23459pt.
+Package pdftex.def Info: img/throughput_sensitivity_b.png used on input line 41
+8.
+(pdftex.def)             Requested size: 496.78545pt x 411.08081pt.
 
-Overfull \hbox (107.70338pt too wide) detected at line 433
+Overfull \hbox (1.78473pt too wide) in paragraph at lines 418--418
+ [] 
+ []
+
+
+Overfull \hbox (107.70338pt too wide) detected at line 418
 [][][][][][][][][][][] [][][][][][][]
  []
 
 (./main.bbl
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
+(Font)              scaled to size 30.85pt on input line 5.
 LaTeX Font Info:    Try loading font information for T1+DejaVuSansMono-TLF on i
-nput line 5.
+nput line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/dejavu/T1DejaVuSansMono-TLF.fd
 File: T1DejaVuSansMono-TLF.fd 2011/06/01 Font definitions for T1/DejaVuSansMono
 -TLF.
 )
 LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/n' will be
-(Font)              scaled to size 26.22269pt on input line 5.
+(Font)              scaled to size 26.22269pt on input line 9.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `DejaVuSansMono-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-)
-<img/iitd_logo.jpg, id=24, 85.7604pt x 36.6168pt>
-File: img/iitd_logo.jpg Graphic file (type jpg)
- <use img/iitd_logo.jpg>
-Package pdftex.def Info: img/iitd_logo.jpg used on input line 433.
-(pdftex.def)             Requested size: 355.14615pt x 151.6529pt.
+LaTeX Font Info:    Calculating math sizes for size <30.85> on input line 9.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `OT1/zavm/m/n/30.85'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `OT1/zavm/m/n/30.85'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `OT1/zavm/m/n/21.59491'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `OT1/zavm/m/n/21.59491'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `OT1/zavm/m/n/15.425'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `OT1/zavm/m/n/15.425'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
+(Font)              scaled to size 26.22269pt on input line 9.
+LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
+(Font)              scaled to size 18.3558pt on input line 9.
+LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
+(Font)              scaled to size 13.11134pt on input line 9.
 
-Overfull \vbox (55.52997pt too high) detected at line 433
- []
+
+LaTeX Font Warning: Font shape `U/matha/m/n' in size <30.85> not available
+(Font)              size <24.88> substituted on input line 9.
+
+
+LaTeX Font Warning: Font shape `U/matha/m/n' in size <21.59491> not available
+(Font)              size <20.74> substituted on input line 9.
+
+
+LaTeX Font Warning: Font shape `U/matha/m/n' in size <15.425> not available
+(Font)              size <14.4> substituted on input line 9.
+
+
+LaTeX Font Warning: Font shape `U/mathb/m/n' in size <30.85> not available
+(Font)              size <24.88> substituted on input line 9.
+
+
+LaTeX Font Warning: Font shape `U/mathb/m/n' in size <21.59491> not available
+(Font)              size <20.74> substituted on input line 9.
+
+
+LaTeX Font Warning: Font shape `U/mathb/m/n' in size <15.425> not available
+(Font)              size <14.4> substituted on input line 9.
+
+
+LaTeX Font Warning: Font shape `U/mathx/m/n' in size <30.85> not available
+(Font)              size <24.88> substituted on input line 9.
+
+
+LaTeX Font Warning: Font shape `U/mathx/m/n' in size <21.59491> not available
+(Font)              size <20.74> substituted on input line 9.
+
+
+LaTeX Font Warning: Font shape `U/mathx/m/n' in size <15.425> not available
+(Font)              size <14.4> substituted on input line 9.
 
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 4.0pt on input line 433.
+(Font)              scaled to size 21.59491pt on input line 9.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 15.425pt on input line 9.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
+(Font)              scaled to size 21.59491pt on input line 9.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
+(Font)              scaled to size 15.425pt on input line 9.
+) <img/iitd_logo.jpg, id=26, 85.7604pt x 36.6168pt>
+File: img/iitd_logo.jpg Graphic file (type jpg)
+ <use img/iitd_logo.jpg>
+Package pdftex.def Info: img/iitd_logo.jpg used on input line 418.
+(pdftex.def)             Requested size: 497.20244pt x 212.31383pt.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
+(Font)              scaled to size 4.0pt on input line 418.
 
 Overfull \hbox (1.47955pt too wide) has occurred while \output is active
 [] 
@@ -1819,26 +2263,30 @@ iitd_logo.jpg>]
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 420.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 420.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 420.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 420.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 12.15pt have occurred.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 36202 strings out of 494945
- 681692 string characters out of 6181032
- 801565 words of memory out of 5000000
- 38697 multiletter control sequences out of 15000+600000
- 170407 words of font info for 121 fonts, out of 8000000 for 9000
+ 36708 strings out of 494945
+ 688487 string characters out of 6181032
+ 817016 words of memory out of 5000000
+ 39164 multiletter control sequences out of 15000+600000
+ 219696 words of font info for 163 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 70i,16n,76p,10393b,1404s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,16n,76p,10393b,1388s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc
 }{/usr/share/texlive/texmf-dist/fonts/enc/dvips/arev/arevoml.enc}{/usr/share/te
 xlive/texmf-dist/fonts/enc/dvips/carlito/crlt_csjzgd.enc}</usr/share/texlive/te
@@ -1848,12 +2296,12 @@ ist/fonts/type1/typoland/carlito/Carlito-Italic.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/typoland/carlito/Carlito.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/dejavu/DejaVuSansMono.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/mathdesign/mdbch/md-chb7t.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/mathdesign/mdbch/md-chb7y.pfb>
-Output written on main.pdf (1 page, 413520 bytes).
+public/mathabx-type1/matha12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/mathabx-type1/mathb12.pfb>
+Output written on main.pdf (1 page, 414121 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  5 named destinations out of 1000 (max. 500000)
- 31331 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 35427 words of extra memory for PDF output out of 35830 (max. 10000000)
 

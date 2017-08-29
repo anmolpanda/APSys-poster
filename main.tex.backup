@@ -121,15 +121,10 @@
 %	OBJECTIVES
 %----------------------------------------------------------------------------------------
 
-\begin{exampleblock}{Objectives and Motivation}
+\begin{exampleblock}{Motivation and Objectives}
 
 \textbf{Goal}: Develop a compiler that can automatically map a high-level specification to an underlying machine architecture in an optimal way.\\
-\textbf{Motivation}:
-\begin{itemize}
-\item Increasing popularity of Software Defined Networks(SDN).
-\item SManual Optimizations are time-consuming and error prone.
-\item DSLs are not very helpful until we develop good compilers.
-\end{itemize}
+\textbf{Motivation}: With increasing popularity of SDN, newer protocols are being developed over time. Researcher are developing DSLs to make the task easier. However, ease of programming doesn't guarantee application performance. 
 
 \end{exampleblock}
 
@@ -144,8 +139,7 @@
 \fbox{\includegraphics[width=0.8\linewidth]{img/compilation_phases}}
 \caption{Compilation phases}
 \end{figure}
-
-
+Applications written in P4\cite{p4} are given as the input to P4C compiler and the compiler generated DPDK\cite{DPDK} based Applications.
 \end{exampleblock}
 
 %----------------------------------------------------------------------------------------
@@ -270,37 +264,37 @@ sub {process\_packet}(p) \{\\
 %----------------------------------------------------------------------------------------
 
 \begin{alertblock}{Performance Model}
-
+% \begin{multicols}{2}
+IO Subsystem, Memory Subsystem and CPU are working in a pipeline fashion. Let the service rate of CPU, CPU-Memory, I/O-Memory DMA interface be c, m, d.
+$$Throughput = min(c, m, d)$$
+The value of b will vary with change in the parameters related to memory $f_{mem}(m, b)$. DMA interface is not linearly scalable and rate increases based on some 
+function $f_{dma} (d,B)$.
+$$Throughput = min(c, f_{mem}(m, b), f_{dma})(d, B))$$
+% \end{multicols}
 \end{alertblock} 
 
 %----------------------------------------------------------------------------------------
 
 \begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
-
 \begin{column}{\twocolwid} % The first column within column 2 (column 2.1)
-
-
 \begin{exampleblock}{Experiments and Results}
-
 \begin{multicols}{3}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{img/batching_and_prefetching}
-\caption{Figure caption}
+\fbox{\includegraphics[width=1\linewidth]{img/batching_and_prefetching}}
+\caption{Effect of Batching and Prefetching}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{img/throughput_sensitivity_B}
-\caption{Figure caption}
+\fbox{\includegraphics[width=1\linewidth]{img/throughput_sensitivity_B}}
+\caption{Sensitivity of Throughput to B}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{img/throughput_sensitivity_b}
-\caption{Figure caption}
+\fbox{\includegraphics[width=1\linewidth]{img/throughput_sensitivity_b}}
+\caption{Sensitivity of Throughput to b}
 \end{figure}
 
-
- 
 \end{multicols}
 \end{exampleblock}
 
@@ -362,10 +356,8 @@ sub {process\_packet}(p) \{\\
 %----------------------------------------------------------------------------------------
 
 \begin{exampleblock}{Conclusion}
-We discuss about batching(B) and sub-batching(b) in this paper. 
-The model to get the optimal value of b and B is preliminary and not fully automatic.
-These optimizations can be used to optimize wide variety of network and streaming applications.
-
+We are using Batching(B) to exploit available parallelism between NIC and Memory interface, and prefetching to exploit the memory level parallelism between CPU and Memory interface.
+Sub-Batching(b) is being used to adjust the prefetch distance to take full advantage from software prefetching. The model to get the optimal value of b and B is preliminary and not fully automatic. We are running the applications to get the value of b and B and feeding the compiler to generate the optimal code. These optimizations can be used for wide variety of network and streaming applications.
 \end{exampleblock}
 
 %----------------------------------------------------------------------------------------
@@ -373,14 +365,11 @@ These optimizations can be used to optimize wide variety of network and streamin
 %----------------------------------------------------------------------------------------
 
 \begin{exampleblock}{Future Work}
-
-Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius dictum. 
 \begin{itemize}
-\item Curabitur pellentesque dignissim
-\item Eu facilisis est tempus quis
-\item Duis porta consequat lorem
+\item Get more understanding of NIC-Memory interface and CPU-Memory interface. 
+\item Make the model robust to be used for various kind of applications.
+\item Use the model for various architecture and do the appropriate changes.
 \end{itemize}
-
 \end{exampleblock}
 
 %----------------------------------------------------------------------------------------

@@ -1,11 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{p4}
+P4: Programming protocol-independent packet processors.
+\newblock {\em SIGCOMM Comput. Commun. Rev.}, 44(3):87--95, July 2014.
+
 \bibitem{DPDK}
 {\em Intel Data Plane Development Kit}.
 \newblock \url{http://dpdk.org/}.
-
-\bibitem{Bosshart:2014:PPP:2656877.2656890}
-P4: Programming protocol-independent packet processors.
-\newblock {\em SIGCOMM Comput. Commun. Rev.}, 44(3):87--95, July 2014.
 
 \end{thebibliography}
