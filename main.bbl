@@ -2,10 +2,19 @@
 
 \bibitem{p4}
 P4: Programming protocol-independent packet processors.
-\newblock {\em SIGCOMM Comput. Commun. Rev.}, 44(3):87--95, July 2014.
+\newblock {\em SIGCOMM Comput. Commun. Rev.}, 44(3), July 2014.
+
+\bibitem{p4c}
+High speed packet forwarding compiled from protocol independent data plane
+  specifications.
+\newblock SIGCOMM '16.
 
 \bibitem{DPDK}
 {\em Intel Data Plane Development Kit}.
 \newblock \url{http://dpdk.org/}.
+
+\bibitem{loop_fission}
+{\em Optimizing supercompilers for supercomputers}.
+\newblock PhD thesis, Univ. of Illinois,Urbana, IL, Jan 1982.
 
 \end{thebibliography}

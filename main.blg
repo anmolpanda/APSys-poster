@@ -4,45 +4,49 @@ The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: sample.bib
 Warning--empty author in p4
-You've used 2 entries,
+Warning--empty author in p4c
+Warning--empty booktitle in p4c
+Warning--empty year in p4c
+Warning--empty author in loop_fission
+You've used 4 entries,
             1791 wiz_defined-function locations,
-            457 strings with 3690 characters,
-and the built_in function-call counts, 293 in all, are:
-= -- 26
-> -- 2
+            463 strings with 3885 characters,
+and the built_in function-call counts, 469 in all, are:
+= -- 35
+> -- 4
 < -- 0
-+ -- 2
++ -- 4
 - -- 0
-* -- 24
-:= -- 40
-add.period$ -- 4
-call.type$ -- 2
-change.case$ -- 1
+* -- 34
+:= -- 61
+add.period$ -- 8
+call.type$ -- 4
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 15
-empty$ -- 37
+cite$ -- 9
+duplicate$ -- 32
+empty$ -- 64
 format.name$ -- 0
-if$ -- 64
+if$ -- 105
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 1
-newline$ -- 11
+int.to.str$ -- 4
+missing$ -- 2
+newline$ -- 19
 num.names$ -- 0
-pop$ -- 5
+pop$ -- 16
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 8
+skip$ -- 17
 stack$ -- 0
-substring$ -- 19
-swap$ -- 2
+substring$ -- 0
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 2
-width$ -- 3
-write$ -- 18
-(There was 1 warning)
+warning$ -- 5
+while$ -- 0
+width$ -- 5
+write$ -- 34
+(There were 5 warnings)

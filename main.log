@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.27)  29 AUG 2017 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.27)  29 AUG 2017 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1895,19 +1895,19 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
 (Font)              scaled to size 17.86pt on input line 94.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 92.13pt on input line 363.
+(Font)              scaled to size 92.13pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <92.13> not availab
 le
 (Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
-363.
+373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
-(Font)              scaled to size 92.13pt on input line 363.
+(Font)              scaled to size 92.13pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 53.32pt on input line 363.
+(Font)              scaled to size 53.32pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 44.43pt on input line 363.
-LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 363.
-LaTeX Font Info:    Try loading font information for OT1+zavm on input line 363
+(Font)              scaled to size 44.43pt on input line 373.
+LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 373.
+LaTeX Font Info:    Try loading font information for OT1+zavm on input line 373
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/arev/ot1zavm.fd
@@ -1936,18 +1936,18 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `OT1/zavm/m/n/18.515'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 31.47572pt on input line 363.
+(Font)              scaled to size 31.47572pt on input line 373.
 <<oml.cmap>>
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 22.0329pt on input line 363.
+(Font)              scaled to size 22.0329pt on input line 373.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 15.73785pt on input line 363.
-LaTeX Font Info:    Try loading font information for OMS+zavm on input line 363
+(Font)              scaled to size 15.73785pt on input line 373.
+LaTeX Font Info:    Try loading font information for OMS+zavm on input line 373
 .
  (/usr/share/texlive/texmf-dist/tex/latex/arev/omszavm.fd
 File: omszavm.fd 2006/05/30 Fontinst v1.929 font definitions for OMS/zavm.
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+iwona on input line 36
+LaTeX Font Info:    Try loading font information for OMX+iwona on input line 37
 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/iwona/omxiwona.fd
@@ -1961,85 +1961,85 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
 LaTeX Font Warning: Font shape `U/matha/m/n' in size <37.03> not available
-(Font)              size <24.88> substituted on input line 363.
+(Font)              size <24.88> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/matha/m/n' in size <25.92088> not available
-(Font)              size <24.88> substituted on input line 363.
+(Font)              size <24.88> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/matha/m/n' in size <18.515> not available
-(Font)              size <17.28> substituted on input line 363.
+(Font)              size <17.28> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathb/m/n' in size <37.03> not available
-(Font)              size <24.88> substituted on input line 363.
+(Font)              size <24.88> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathb/m/n' in size <25.92088> not available
-(Font)              size <24.88> substituted on input line 363.
+(Font)              size <24.88> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathb/m/n' in size <18.515> not available
-(Font)              size <17.28> substituted on input line 363.
+(Font)              size <17.28> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathx/m/n' in size <37.03> not available
-(Font)              size <24.88> substituted on input line 363.
+(Font)              size <24.88> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathx/m/n' in size <25.92088> not available
-(Font)              size <24.88> substituted on input line 363.
+(Font)              size <24.88> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathx/m/n' in size <18.515> not available
-(Font)              size <17.28> substituted on input line 363.
+(Font)              size <17.28> substituted on input line 373.
 
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 25.92088pt on input line 363.
+(Font)              scaled to size 25.92088pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 18.515pt on input line 363.
+(Font)              scaled to size 18.515pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 37.03pt on input line 363.
+(Font)              scaled to size 37.03pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 25.92088pt on input line 363.
+(Font)              scaled to size 25.92088pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 18.515pt on input line 363.
+(Font)              scaled to size 18.515pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <37.03> not availab
 le
 (Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
-363.
+373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
-(Font)              scaled to size 37.03pt on input line 363.
+(Font)              scaled to size 37.03pt on input line 373.
 <img/compilation_phases.png, id=18, 1198.4775pt x 511.9125pt>
 File: img/compilation_phases.png Graphic file (type png)
 
 <use img/compilation_phases.png>
-Package pdftex.def Info: img/compilation_phases.png used on input line 363.
+Package pdftex.def Info: img/compilation_phases.png used on input line 373.
 (pdftex.def)             Requested size: 568.236pt x 242.71573pt.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 30.85pt on input line 363.
+(Font)              scaled to size 30.85pt on input line 373.
 
-<img/packet_process_pipeline.png, id=21, 997.7275pt x 369.38pt>
+<img/packet_process_pipeline.png, id=23, 997.7275pt x 369.38pt>
 File: img/packet_process_pipeline.png Graphic file (type png)
 
 <use img/packet_process_pipeline.png>
-Package pdftex.def Info: img/packet_process_pipeline.png used on input line 363
+Package pdftex.def Info: img/packet_process_pipeline.png used on input line 373
 .
 (pdftex.def)             Requested size: 568.236pt x 210.37968pt.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 363.
+             The label is: * on input line 373.
 
 LaTeX Font Info:    Try loading font information for OMS+Carlito-LF on input li
-ne 363.
-LaTeX Font Info:    No file OMSCarlito-LF.fd. on input line 363.
+ne 373.
+LaTeX Font Info:    No file OMSCarlito-LF.fd. on input line 373.
 
 LaTeX Font Warning: Font shape `OMS/Carlito-LF/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 363.
+(Font)              using `OMS/cmsy/m/n' instead on input line 373.
 
-LaTeX Font Info:    Calculating math sizes for size <17.86> on input line 363.
+LaTeX Font Info:    Calculating math sizes for size <17.86> on input line 373.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `OT1/zavm/m/n/17.86'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2059,98 +2059,181 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `OT1/zavm/m/n/8.93'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 15.1811pt on input line 363.
+(Font)              scaled to size 15.1811pt on input line 373.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 10.62671pt on input line 363.
+(Font)              scaled to size 10.62671pt on input line 373.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 7.59055pt on input line 363.
+(Font)              scaled to size 7.59055pt on input line 373.
 
 LaTeX Font Warning: Font shape `U/matha/m/n' in size <17.86> not available
-(Font)              size <17.28> substituted on input line 363.
+(Font)              size <17.28> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/matha/m/n' in size <12.50194> not available
-(Font)              size <12> substituted on input line 363.
+(Font)              size <12> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathb/m/n' in size <17.86> not available
-(Font)              size <17.28> substituted on input line 363.
+(Font)              size <17.28> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathb/m/n' in size <12.50194> not available
-(Font)              size <12> substituted on input line 363.
+(Font)              size <12> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathx/m/n' in size <17.86> not available
-(Font)              size <17.28> substituted on input line 363.
+(Font)              size <17.28> substituted on input line 373.
 
 
 LaTeX Font Warning: Font shape `U/mathx/m/n' in size <12.50194> not available
-(Font)              size <12> substituted on input line 363.
+(Font)              size <12> substituted on input line 373.
 
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 12.50194pt on input line 363.
+(Font)              scaled to size 12.50194pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 8.93pt on input line 363.
+(Font)              scaled to size 8.93pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 17.86pt on input line 363.
+(Font)              scaled to size 17.86pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 12.50194pt on input line 363.
+(Font)              scaled to size 12.50194pt on input line 373.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 8.93pt on input line 363.
+(Font)              scaled to size 8.93pt on input line 373.
 
-Overfull \hbox (220.4916pt too wide) in paragraph at lines 363--363
+Overfull \hbox (220.4916pt too wide) in paragraph at lines 373--373
  [] 
  []
 
 
-Overfull \hbox (220.4916pt too wide) in paragraph at lines 363--363
+Overfull \hbox (220.4916pt too wide) in paragraph at lines 373--373
  [] 
  []
 
 
-Overfull \hbox (220.4916pt too wide) in paragraph at lines 363--363
+Overfull \hbox (220.4916pt too wide) in paragraph at lines 373--373
  [] 
  []
 
-<img/batching_and_prefetching.png, id=22, 596.2275pt x 494.84875pt>
+LaTeX Font Info:    Try loading font information for OT1+Carlito-LF on input li
+ne 373.
+(/usr/share/texlive/texmf-dist/tex/latex/carlito/OT1Carlito-LF.fd
+File: OT1Carlito-LF.fd 2014/08/20 (autoinst) Font definitions for OT1/Carlito-L
+F.
+)
+LaTeX Font Info:    Font shape `OT1/Carlito-LF/bx/n' in size <37.03> not availa
+ble
+(Font)              Font shape `OT1/Carlito-LF/b/n' tried instead on input line
+ 373.
+LaTeX Font Info:    Font shape `OT1/Carlito-LF/b/n' will be
+(Font)              scaled to size 37.03pt on input line 373.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `Carlito-LF' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/Carlito-LF/bx/n' in size <25.92088> not ava
+ilable
+(Font)              Font shape `OT1/Carlito-LF/b/n' tried instead on input line
+ 373.
+LaTeX Font Info:    Font shape `OT1/Carlito-LF/b/n' will be
+(Font)              scaled to size 25.92088pt on input line 373.
+LaTeX Font Info:    Font shape `OT1/Carlito-LF/bx/n' in size <18.515> not avail
+able
+(Font)              Font shape `OT1/Carlito-LF/b/n' tried instead on input line
+ 373.
+LaTeX Font Info:    Font shape `OT1/Carlito-LF/b/n' will be
+(Font)              scaled to size 18.515pt on input line 373.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 373.
+
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 373
+.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 373
+.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <37.03> on input line 373.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <25.92088> on input line 373.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <18.515> on input line 373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <25.92088> not avai
+lable
+(Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
+373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
+(Font)              scaled to size 25.92088pt on input line 373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/n' in size <18.515> not availa
+ble
+(Font)              Font shape `T1/Carlito-LF/b/n' tried instead on input line 
+373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/n' will be
+(Font)              scaled to size 18.515pt on input line 373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/it' in size <37.03> not availa
+ble
+(Font)              Font shape `T1/Carlito-LF/b/it' tried instead on input line
+ 373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/it' will be
+(Font)              scaled to size 37.03pt on input line 373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/it' in size <25.92088> not ava
+ilable
+(Font)              Font shape `T1/Carlito-LF/b/it' tried instead on input line
+ 373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/it' will be
+(Font)              scaled to size 25.92088pt on input line 373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/bx/it' in size <18.515> not avail
+able
+(Font)              Font shape `T1/Carlito-LF/b/it' tried instead on input line
+ 373.
+LaTeX Font Info:    Font shape `T1/Carlito-LF/b/it' will be
+(Font)              scaled to size 18.515pt on input line 373.
+
+<img/batching_and_prefetching.png, id=26, 596.2275pt x 494.84875pt>
 File: img/batching_and_prefetching.png Graphic file (type png)
 
 <use img/batching_and_prefetching.png>
-Package pdftex.def Info: img/batching_and_prefetching.png used on input line 36
+Package pdftex.def Info: img/batching_and_prefetching.png used on input line 37
 3.
 (pdftex.def)             Requested size: 496.78545pt x 412.31758pt.
 
-Overfull \hbox (1.78473pt too wide) in paragraph at lines 363--363
+Overfull \hbox (1.78473pt too wide) in paragraph at lines 373--373
  [] 
  []
 
-<img/throughput_sensitivity_B.png, id=23, 596.2275pt x 495.8525pt>
+<img/throughput_sensitivity_B.png, id=27, 596.2275pt x 495.8525pt>
 File: img/throughput_sensitivity_B.png Graphic file (type png)
 
 <use img/throughput_sensitivity_B.png>
-Package pdftex.def Info: img/throughput_sensitivity_B.png used on input line 36
+Package pdftex.def Info: img/throughput_sensitivity_B.png used on input line 37
 3.
 (pdftex.def)             Requested size: 496.78545pt x 413.15392pt.
 
-Overfull \hbox (1.78473pt too wide) in paragraph at lines 363--363
+Overfull \hbox (1.78473pt too wide) in paragraph at lines 373--373
  [] 
  []
 
-<img/throughput_sensitivity_b.png, id=24, 599.23875pt x 495.8525pt>
+<img/throughput_sensitivity_b.png, id=28, 599.23875pt x 495.8525pt>
 File: img/throughput_sensitivity_b.png Graphic file (type png)
 
 <use img/throughput_sensitivity_b.png>
-Package pdftex.def Info: img/throughput_sensitivity_b.png used on input line 36
+Package pdftex.def Info: img/throughput_sensitivity_b.png used on input line 37
 3.
 (pdftex.def)             Requested size: 496.78545pt x 411.08081pt.
 
-Overfull \hbox (1.78473pt too wide) in paragraph at lines 363--363
+Overfull \hbox (1.78473pt too wide) in paragraph at lines 373--373
  [] 
  []
 
 
-Overfull \hbox (107.70338pt too wide) detected at line 363
+Overfull \hbox (107.70338pt too wide) detected at line 373
 [][][][][][][][][][][] [][][][][][][]
  []
 
@@ -2158,19 +2241,19 @@ Overfull \hbox (107.70338pt too wide) detected at line 363
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
 (Font)              scaled to size 30.85pt on input line 5.
 LaTeX Font Info:    Try loading font information for T1+DejaVuSansMono-TLF on i
-nput line 9.
+nput line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/dejavu/T1DejaVuSansMono-TLF.fd
 File: T1DejaVuSansMono-TLF.fd 2011/06/01 Font definitions for T1/DejaVuSansMono
 -TLF.
 )
 LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/n' will be
-(Font)              scaled to size 26.22269pt on input line 9.
+(Font)              scaled to size 26.22269pt on input line 14.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `DejaVuSansMono-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Calculating math sizes for size <30.85> on input line 9.
+LaTeX Font Info:    Calculating math sizes for size <30.85> on input line 14.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `OT1/zavm/m/n/30.85'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2190,67 +2273,67 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `OT1/zavm/m/n/15.425'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 26.22269pt on input line 9.
+(Font)              scaled to size 26.22269pt on input line 14.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 18.3558pt on input line 9.
+(Font)              scaled to size 18.3558pt on input line 14.
 LaTeX Font Info:    Font shape `OML/zavm/m/it' will be
-(Font)              scaled to size 13.11134pt on input line 9.
+(Font)              scaled to size 13.11134pt on input line 14.
 
 
 LaTeX Font Warning: Font shape `U/matha/m/n' in size <30.85> not available
-(Font)              size <24.88> substituted on input line 9.
+(Font)              size <24.88> substituted on input line 14.
 
 
 LaTeX Font Warning: Font shape `U/matha/m/n' in size <21.59491> not available
-(Font)              size <20.74> substituted on input line 9.
+(Font)              size <20.74> substituted on input line 14.
 
 
 LaTeX Font Warning: Font shape `U/matha/m/n' in size <15.425> not available
-(Font)              size <14.4> substituted on input line 9.
+(Font)              size <14.4> substituted on input line 14.
 
 
 LaTeX Font Warning: Font shape `U/mathb/m/n' in size <30.85> not available
-(Font)              size <24.88> substituted on input line 9.
+(Font)              size <24.88> substituted on input line 14.
 
 
 LaTeX Font Warning: Font shape `U/mathb/m/n' in size <21.59491> not available
-(Font)              size <20.74> substituted on input line 9.
+(Font)              size <20.74> substituted on input line 14.
 
 
 LaTeX Font Warning: Font shape `U/mathb/m/n' in size <15.425> not available
-(Font)              size <14.4> substituted on input line 9.
+(Font)              size <14.4> substituted on input line 14.
 
 
 LaTeX Font Warning: Font shape `U/mathx/m/n' in size <30.85> not available
-(Font)              size <24.88> substituted on input line 9.
+(Font)              size <24.88> substituted on input line 14.
 
 
 LaTeX Font Warning: Font shape `U/mathx/m/n' in size <21.59491> not available
-(Font)              size <20.74> substituted on input line 9.
+(Font)              size <20.74> substituted on input line 14.
 
 
 LaTeX Font Warning: Font shape `U/mathx/m/n' in size <15.425> not available
-(Font)              size <14.4> substituted on input line 9.
+(Font)              size <14.4> substituted on input line 14.
 
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 21.59491pt on input line 9.
+(Font)              scaled to size 21.59491pt on input line 14.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 15.425pt on input line 9.
+(Font)              scaled to size 15.425pt on input line 14.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 21.59491pt on input line 9.
+(Font)              scaled to size 21.59491pt on input line 14.
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/it' will be
-(Font)              scaled to size 15.425pt on input line 9.
-) <img/iitd_logo.jpg, id=26, 85.7604pt x 36.6168pt>
+(Font)              scaled to size 15.425pt on input line 14.
+) <img/iitd_logo.jpg, id=30, 85.7604pt x 36.6168pt>
 File: img/iitd_logo.jpg Graphic file (type jpg)
  <use img/iitd_logo.jpg>
-Package pdftex.def Info: img/iitd_logo.jpg used on input line 363.
-(pdftex.def)             Requested size: 497.20244pt x 212.31383pt.
+Package pdftex.def Info: img/iitd_logo.jpg used on input line 373.
+(pdftex.def)             Requested size: 426.1797pt x 181.9856pt.
 
-Overfull \vbox (22.14565pt too high) detected at line 363
+Overfull \vbox (22.38528pt too high) detected at line 373
  []
 
 LaTeX Font Info:    Font shape `T1/Carlito-LF/m/n' will be
-(Font)              scaled to size 4.0pt on input line 363.
+(Font)              scaled to size 4.0pt on input line 373.
 
 Overfull \hbox (1.47955pt too wide) has occurred while \output is active
 [] 
@@ -2271,11 +2354,11 @@ iitd_logo.jpg>]
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 365.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 365.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 365.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 365.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2288,28 +2371,28 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 36761 strings out of 494945
- 689320 string characters out of 6181032
- 821777 words of memory out of 5000000
- 39216 multiletter control sequences out of 15000+600000
- 219220 words of font info for 161 fonts, out of 8000000 for 9000
+ 36861 strings out of 494945
+ 691611 string characters out of 6181032
+ 826110 words of memory out of 5000000
+ 39284 multiletter control sequences out of 15000+600000
+ 263563 words of font info for 169 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  70i,16n,76p,10393b,1388s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc
-}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/arev/arevoml.enc}{/usr/share/te
-xlive/texmf-dist/fonts/enc/dvips/carlito/crlt_csjzgd.enc}</usr/share/texlive/te
-xmf-dist/fonts/type1/public/arev/ArevSans-Oblique.pfb></usr/share/texlive/texmf
--dist/fonts/type1/typoland/carlito/Carlito-Bold.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/typoland/carlito/Carlito-Italic.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/typoland/carlito/Carlito.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/dejavu/DejaVuSansMono.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/mathabx-type1/matha12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/mathabx-type1/mathb12.pfb>
-Output written on main.pdf (1 page, 414314 bytes).
+}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/carlito/crlt_csjzgd.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive/texmf-dist/font
+s/type1/typoland/carlito/Carlito-Bold.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/typoland/carlito/Carlito-BoldItalic.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/typoland/carlito/Carlito-Italic.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/typoland/carlito/Carlito.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/dejavu/DejaVuSansMono.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathb12.pfb>
+Output written on main.pdf (1 page, 421662 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 35427 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 37475 words of extra memory for PDF output out of 42996 (max. 10000000)
 

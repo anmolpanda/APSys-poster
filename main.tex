@@ -86,7 +86,7 @@
 %----------------------------------------------------------------------------------------
 
 \title{A Preliminary Performance Model for Optimizing Software Packet Processing Pipelines} % Poster title
-\author{Ankit Bhardwaj, Atul Shree, Bhargav Reddy V, and Sorav Bansal} % Author(s)
+\author{Ankit Bhardwaj, Atul Shree, Bhargav Reddy V and Sorav Bansal} % Author(s)
 \institute{Department of Computer Science and Engineering, Indian Institute of Technology Delhi} % Institution(s)
 
 %----------------------------------------------------------------------------------------
@@ -128,7 +128,11 @@
 %----------------------------------------------------------------------------------------
 
 \begin{exampleblock}{Motivation and Objectives}
-\textbf{Motivation}: With increasing popularity of SDN, newer protocols are being developed over time. Researcher are developing DSLs to make the task easier. However, ease of programming doesn't guarantee application performance.\\
+\begin{itemize}
+ \item Newer functionalities are being developed over time with increasing popularity of SDN.
+ \item Researchers are developing DSLs to make the task easier. However, ease of programming doesn't guarantee application performance.
+\end{itemize}
+\vspace{1cm}
 \textbf{Goal}: Develop a compiler that can automatically map a high-level specification to an underlying machine architecture in an optimal way.
 \end{exampleblock}
 
@@ -143,7 +147,7 @@
 \fbox{\includegraphics[width=0.8\linewidth]{img/compilation_phases}}
 \caption{Compilation phases}
 \end{figure}
-Applications written in P4\cite{p4} are given as the input to P4C compiler and the compiler generated DPDK\cite{DPDK} based Applications. DPDK application is compiled using gcc to generate the target binary.
+Applications written in P4\cite{p4} are given as the input to P4C\cite{p4c} compiler and the compiler generated DPDK\cite{DPDK} based Applications. DPDK\cite{DPDK} application is compiled using gcc to generate the target binary.
 \end{exampleblock}
 
 %----------------------------------------------------------------------------------------
@@ -198,7 +202,7 @@ sub app \{\\
 \end{tiny}
 % \caption{Batching}
 \end{figure}
-Loop Fission Transformation for Batching
+Loop Fission\cite{loop_fission} Transformation for Batching
 %----------------------------------------------
 %	SUB-BATCHING
 %----------------------------------------------
@@ -227,7 +231,7 @@ sub {process\_packet}(p) \{\\
 % \caption{Sub-batching}
 \end{figure}
 
-Loop Fission Transformation for Sub-Batching
+Loop Fission\cite{loop_fission} Transformation for Sub-Batching
 %----------------------------------------------
 %	PREFETCHING
 %----------------------------------------------
@@ -266,9 +270,13 @@ Use of Sub-Batching for Prefetching
 %----------------------------------------------------------------------------------------
 
 \begin{alertblock}{Performance Model}
-% \begin{multicols}{2}
-IO Subsystem, Memory Subsystem and CPU work in a pipeline fashion. Let the service rate of CPU, CPU-Memory, I/O-Memory DMA interface be c, m, d. $Throughput$ of the application will be $min(c, m, d)$. The value of b will vary with change in the parameters related to memory $f_{mem}(m, b)$. DMA interface is not linearly scalable and rate increases based on some function $f_{dma} (d,B)$.
-$$Throughput = min(c, f_{mem}(m, b), f_{dma})(d, B))$$
+\begin{itemize}
+ \item Let the service rate of CPU, CPU-Memory, I/O-Memory interface be {\bf c, m, d}.
+ \item {\bf Throughput} of the application will be {\bf min(c, m, d)}.
+ \item The value of {\bf m} will vary with change in {\bf b} and will follow some $\boldsymbol{f_{mem}(m, b)}$.
+ \item DMA interface is not linearly scalable and {\bf d} increases based on some function $\boldsymbol{f_{dma} (d,B)}$.
+ \item $\boldsymbol{Throughput = min(c, f_{mem}(m, b), f_{dma})(d, B))}$
+\end{itemize}  
 \end{alertblock} 
 
 %----------------------------------------------------------------------------------------
@@ -317,8 +325,13 @@ $$Throughput = min(c, f_{mem}(m, b), f_{dma})(d, B))$$
 %----------------------------------------------------------------------------------------
 
 \begin{exampleblock}{Discussion}
-We are using Batching(B) to exploit available parallelism between NIC and Memory interface, and prefetching to exploit the memory level parallelism between CPU and Memory interface.
-Sub-Batching(b) is being used to adjust the prefetch distance to take full advantage from software prefetching. The model to get the optimal value of b and B is preliminary and not fully automatic. We are running the applications to get the value of b and B and feeding the compiler to generate the optimal code. These optimizations can be used for wide variety of network and streaming applications.
+\begin{itemize}
+ \item Use of Batching({\bf B}) to exploit NIC-Memory Parallelism.
+ \item Use of Prefetching to exploit MLP at Memory-CPU interface in the pipeline.
+ \item Use of sub-batch({\bf b}) to adjust the prefetch distance.
+ \item Run the applications to find optimal value of {\bf b} and {\bf B}.
+ \item Input {\bf b} and {\bf B} to the compiler to generate optimized DPDK application.
+\end{itemize}
 \end{exampleblock}
 
 %----------------------------------------------------------------------------------------
@@ -346,11 +359,8 @@ Sub-Batching(b) is being used to adjust the prefetch distance to take full advan
 
 
 \begin{center}
-\includegraphics[width=0.7\linewidth]{img/iitd_logo.jpg}
+\includegraphics[width=0.6\linewidth]{img/iitd_logo.jpg}
 \end{center}
-
-
-
 
 %----------------------------------------------------------------------------------------
 
