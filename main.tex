@@ -74,9 +74,11 @@
 
 \usepackage{multicol} % For multicols
 
-\usepackage{mdframed} % for border arounf figures
+\usepackage{mdframed} % for border around figures
 
 \usepackage{mathabx} % for up and down arrow
+
+\usepackage{listings} % for C code
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
@@ -231,27 +233,32 @@ sub {process\_packet}(p) \{\\
 \begin{figure}[ht]
 \begin{tiny}
 \begin{tabular}[b]{p{\onecolwid}}
-sub\hspace{0.2cm} app \{\\
-\hspace{0.3cm}for (i = 0; i < B; i++)\\
-\hspace{0.6cm}p[i] = read\_from\_input\_NIC();\\
-\hspace{0.3cm}for (i = 0; i < B; i++)\\
-\hspace{0.6cm}p[i] = process\_packet(p[i]);\\
-\hspace{0.3cm}for (i = 0; i < B; i++)\\
-\hspace{0.6cm}write\_to\_output\_NIC(p[i]);\\
-\}\\
+
+sub\hspace{0.2\sepwid} hash\_lookup() \{\\
+\hspace{0.4\sepwid}for( i=0; i<B; i++)\{\\
+\hspace{0.6\sepwid}key\_hash[i] = hash\_compute(key[i]);\\
+\hspace{0.6\sepwid}prefetch(bucket(key-hash[i]));\\
+\hspace{0.4\sepwid}\}\\
+\hspace{0.4\sepwid}for( i=0; i < B; i++)\{\\
+\hspace{0.6\sepwid}val[j] = hash\_lookup(key\_hash[j]);\\
+\}\hspace{0.4\sepwid}\}
+
 \hspace{1\sepwid}$\updownarrows$\\
-sub\hspace{0.2cm} app \{\\
-\hspace{0.3cm}for (i = 0; i < B; i++)\\
-\hspace{0.6cm}p[i] = read\_from\_input\_NIC();\\
-\hspace{0.3cm}for (i = 0; i < B; i++)\\
-\hspace{0.6cm}p[i] = process\_packet(p[i]);\\
-\hspace{0.3cm}for (i = 0; i < B; i++)\\
-\hspace{0.6cm}write\_to\_output\_NIC(p[i]);\\
-\}\\
+ 
+sub{ hash\_lookup()} \{\\
+\hspace{0.4\sepwid}for( i = 0; i < B; i += b)\{\\
+\hspace{0.6\sepwid}for( j = i; j < i + b; j++ )\{\\
+\hspace{0.8\sepwid}key\_hash[i] = hash\_compute(key[i]);\\
+\hspace{0.8\sepwid}prefetch(bucket(key-hash[i]));\\
+\hspace{0.6\sepwid}\}\\
+\hspace{0.6\sepwid}for( j = i; j < i + b; j++ )\{\\
+\hspace{0.8\sepwid}val[j] = hash\_lookup(key\_hash[j]);\\
+\}\hspace{0.4\sepwid}\}\hspace{0.2\sepwid}\}
 \end{tabular}
 \end{tiny}
 % \caption{Prefetching}
 \end{figure}
+
 \end{multicols}
 \end{exampleblock}
 %----------------------------------------------------------------------------------------
